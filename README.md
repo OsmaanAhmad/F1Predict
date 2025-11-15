@@ -4,6 +4,8 @@ Machine learning system for predicting Formula 1 race outcomes using XGBoost and
 
 ## 🚀 Quick Start
 
+### macOS/Linux
+
 ```bash
 # 1. Clone the repository
 git clone https://github.com/yourusername/F1Predict.git
@@ -16,6 +18,25 @@ pip install -r requirements.txt
 
 # 3. Run the interactive system
 ./venv/bin/python3 f1_predict_system.py
+```
+
+### Windows (PowerShell)
+
+```powershell
+# 1. Clone the repository
+git clone https://github.com/yourusername/F1Predict.git
+cd F1Predict
+
+# 2. Set PowerShell execution policy (if needed)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# 3. Create virtual environment and install dependencies
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+# 4. Run the interactive system
+python f1_predict_system.py
 ```
 
 That's it! The interactive menu will guide you through everything.
@@ -59,12 +80,6 @@ The system provides an easy-to-use menu:
 - Pit stop strategies
 - Track-specific performance
 - 31+ engineered features per driver
-
-## 🛠️ Requirements
-
-- Python 3.13+
-- 2GB disk space
-- Internet connection (for API data)
 
 ## 📁 Project Structure
 
