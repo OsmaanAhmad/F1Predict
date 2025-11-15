@@ -1,0 +1,126 @@
+# F1 Prediction Model Configuration
+
+# API Configuration
+api:
+  base_url: "https://api.openf1.org/v1"
+  timeout: 30
+  max_retries: 3
+  rate_limit_delay: 1.0  # seconds between requests
+
+# Data Collection
+data:
+  seasons: [2025]  # Seasons to collect data for
+  raw_data_path: "data/raw"
+  processed_data_path: "data/processed"
+  model_path: "data/models"
+  
+  # Data types to collect
+  collect:
+    sessions: true
+    laps: true
+    positions: true
+    weather: true
+    pit_stops: true
+    telemetry: true
+    intervals: true
+    
+# Feature Engineering
+features:
+  # Lap-based features
+  lap_features:
+    - avg_lap_time
+    - lap_time_std
+    - best_lap_time
+    - consistency_score
+    
+  # Driver features
+  driver_features:
+    - championship_position
+    - points_before_race
+    - avg_finish_position
+    - dnf_rate
+    - qualifying_position
+    
+  # Team features
+  team_features:
+    - team_avg_pace
+    - team_reliability
+    - constructor_position
+    
+  # Race features
+  race_features:
+    - circuit_type
+    - weather_condition
+    - safety_car_count
+    - total_pit_stops
+    
+  # Window sizes for rolling statistics
+  rolling_windows: [3, 5, 10]  # races
+  
+# Model Configuration
+models:
+  random_forest:
+    n_estimators: 200
+    max_depth: 15
+    min_samples_split: 5
+    min_samples_leaf: 2
+    random_state: 42
+    n_jobs: -1
+    
+  xgboost:
+    n_estimators: 300
+    max_depth: 8
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    objective: 'reg:squarederror'
+    random_state: 42
+    n_jobs: -1
+    
+  # Model selection
+  default_model: 'xgboost'
+  
+# Training Configuration
+training:
+  test_size: 0.2
+  validation_size: 0.1
+  shuffle: false  # Keep temporal order for time series
+  random_state: 42
+  
+  # Cross-validation
+  cv_folds: 5
+  cv_strategy: 'time_series'  # or 'k_fold'
+  
+  # Feature scaling
+  scale_features: true
+  scaler_type: 'standard'  # or 'minmax', 'robust'
+  
+# Evaluation Metrics
+evaluation:
+  primary_metric: 'mae'  # Mean Absolute Error
+  metrics:
+    - mae
+    - rmse
+    - r2_score
+    - top3_accuracy
+    - winner_accuracy
+    - podium_precision
+    
+# Prediction Configuration
+prediction:
+  confidence_threshold: 0.7
+  output_format: 'json'  # or 'csv'
+  include_probabilities: true
+  
+# Logging
+logging:
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: 'logs/f1predict.log'
+  
+# Visualization
+visualization:
+  style: 'seaborn-v0_8-darkgrid'
+  figsize: [12, 6]
+  dpi: 100
+  save_format: 'png'
