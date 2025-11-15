@@ -122,7 +122,6 @@ python main.py --mode collect
 - Race strategy planning
 - Fantasy F1 team selection
 - Performance analysis
-- Betting insights
 - Research & analytics
 
 
