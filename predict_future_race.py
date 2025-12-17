@@ -426,7 +426,7 @@ def predict_race(meeting_key: int, location: str = None):
         logger.info("="*80)
         
         for idx, row in prediction_features.head(15).iterrows():
-            pos = int(row['predicted_position_int'])
+            pos = int(row['predicted_rank'])  # Use predicted_rank instead of predicted_position_int
             name = row.get('full_name', f"Driver #{int(row['driver_number'])}")
             team = row.get('team_name', '')
             driver_num = int(row['driver_number'])

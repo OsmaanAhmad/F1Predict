@@ -10,6 +10,8 @@ from typing import List, Dict, Optional
 from datetime import datetime
 import logging
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
 
 from .api_client import OpenF1Client
 
@@ -63,47 +65,37 @@ class DataCollector:
         all_intervals = []
         all_drivers = []
         
-        # Collect data for each session
-        for _, session in race_sessions.iterrows():
-            session_key = session['session_key']
-            session_name = session.get('session_name', 'Unknown')
+        # Collect data for each session using parallel processing
+        # Reduced to 2 workers to avoid API rate limiting
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            # Submit all session collection tasks
+            future_to_session = {
+                executor.submit(self._collect_session_data, row['session_key'], row.get('session_name', 'Unknown')): row
+                for _, row in race_sessions.iterrows()
+            }
             
-            logger.info(f"Collecting data for {session_name} (session_key: {session_key})")
-            
-            try:
-                # Get laps
-                laps = self.api_client.get_laps(session_key=session_key)
-                if laps:
-                    all_laps.extend(laps)
+            # Process completed tasks
+            for future in as_completed(future_to_session):
+                try:
+                    session_data = future.result()
                     
-                # Get positions
-                positions = self.api_client.get_positions(session_key=session_key)
-                if positions:
-                    all_positions.extend(positions)
-                    
-                # Get weather
-                weather = self.api_client.get_weather(session_key=session_key)
-                if weather:
-                    all_weather.extend(weather)
-                    
-                # Get pit stops
-                pit_stops = self.api_client.get_pit_stops(session_key=session_key)
-                if pit_stops:
-                    all_pit_stops.extend(pit_stops)
-                    
-                # Get intervals
-                intervals = self.api_client.get_intervals(session_key=session_key)
-                if intervals:
-                    all_intervals.extend(intervals)
-                    
-                # Get drivers
-                drivers = self.api_client.get_drivers(session_key=session_key)
-                if drivers:
-                    all_drivers.extend(drivers)
-                    
-            except Exception as e:
-                logger.error(f"Error collecting data for session {session_key}: {e}")
-                continue
+                    # Aggregate data from each session
+                    if session_data['laps']:
+                        all_laps.extend(session_data['laps'])
+                    if session_data['positions']:
+                        all_positions.extend(session_data['positions'])
+                    if session_data['weather']:
+                        all_weather.extend(session_data['weather'])
+                    if session_data['pit_stops']:
+                        all_pit_stops.extend(session_data['pit_stops'])
+                    if session_data['intervals']:
+                        all_intervals.extend(session_data['intervals'])
+                    if session_data['drivers']:
+                        all_drivers.extend(session_data['drivers'])
+                        
+                except Exception as e:
+                    session = future_to_session[future]
+                    logger.error(f"Error collecting data for session {session.get('session_key')}: {e}")
         
         # Convert to DataFrames
         data = {
@@ -120,6 +112,52 @@ class DataCollector:
         self.save_raw_data(data, year)
         
         return data
+    
+    def _collect_session_data(self, session_key: int, session_name: str) -> Dict[str, List]:
+        """
+        Collect all data types for a single session using parallel requests
+        
+        Args:
+            session_key: Unique session identifier
+            session_name: Name of the session
+            
+        Returns:
+            Dictionary with lists of data for each type
+        """
+        logger.info(f"Collecting data for {session_name} (session_key: {session_key})")
+        
+        session_data = {
+            'laps': [],
+            'positions': [],
+            'weather': [],
+            'pit_stops': [],
+            'intervals': [],
+            'drivers': []
+        }
+        
+        # Use ThreadPoolExecutor to fetch all data types in parallel
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            # Submit all API calls for this session
+            futures = {
+                'laps': executor.submit(self.api_client.get_laps, session_key=session_key),
+                'positions': executor.submit(self.api_client.get_positions, session_key=session_key),
+                'weather': executor.submit(self.api_client.get_weather, session_key=session_key),
+                'pit_stops': executor.submit(self.api_client.get_pit_stops, session_key=session_key),
+                'intervals': executor.submit(self.api_client.get_intervals, session_key=session_key),
+                'drivers': executor.submit(self.api_client.get_drivers, session_key=session_key)
+            }
+            
+            # Collect results as they complete
+            for data_type, future in futures.items():
+                try:
+                    result = future.result(timeout=60)  # 60 second timeout per request
+                    if result:
+                        session_data[data_type] = result
+                        logger.debug(f"  ✓ {data_type}: {len(result)} records")
+                except Exception as e:
+                    logger.warning(f"  ✗ {data_type} failed for session {session_key}: {e}")
+        
+        return session_data
     
     def save_raw_data(self, data: Dict[str, pd.DataFrame], year: int):
         """

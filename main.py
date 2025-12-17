@@ -41,7 +41,7 @@ def collect_data(config):
     
     for season in seasons:
         logger.info(f"\n--- Collecting {season} Season ---")
-        collector.collect_season_data(season, session_types=['Race'])
+        collector.collect_season_data(season, session_types=['Practice', 'Qualifying', 'Race', 'Sprint'])
     
     client.close()
     logger.info("=== Data Collection Complete ===\n")

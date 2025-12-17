@@ -3435,3 +3435,1399 @@ Model saved to data/models/xgboost_model.pkl
 2025-11-15 14:28:42,754 - __main__ - INFO - === Model Training Complete ===
 
 2025-11-15 14:28:42,755 - __main__ - INFO - Done!
+2025-12-17 23:20:04,765 - __main__ - INFO - Starting F1 Predictor in 'collect' mode
+2025-12-17 23:20:04,768 - __main__ - INFO - === Starting Data Collection ===
+2025-12-17 23:20:04,769 - __main__ - INFO - Collecting data for seasons: [2025]
+2025-12-17 23:20:04,769 - __main__ - INFO - 
+--- Collecting 2025 Season ---
+2025-12-17 23:20:04,769 - src.data.data_collector - INFO - Collecting data for 2025 season
+2025-12-17 23:20:04,769 - src.data.api_client - INFO - Fetching sessions for year=2025, type=None
+2025-12-17 23:20:06,556 - src.data.data_collector - INFO - Found 123 sessions
+2025-12-17 23:20:06,557 - src.data.data_collector - INFO - Collecting data for Day 1 (session_key: 9683)
+2025-12-17 23:20:06,557 - src.data.api_client - INFO - Fetching laps for session=9683, driver=None
+2025-12-17 23:20:09,609 - src.data.api_client - INFO - Fetching positions for session=9683
+2025-12-17 23:20:11,185 - src.data.api_client - INFO - Fetching weather for session=9683
+2025-12-17 23:20:13,057 - src.data.api_client - INFO - Fetching pit stops for session=9683
+2025-12-17 23:20:14,639 - src.data.api_client - INFO - Fetching intervals for session=9683
+2025-12-17 23:20:16,029 - src.data.api_client - INFO - Fetching drivers for session=9683
+2025-12-17 23:20:17,535 - src.data.data_collector - INFO - Collecting data for Day 2 (session_key: 9684)
+2025-12-17 23:20:17,535 - src.data.api_client - INFO - Fetching laps for session=9684, driver=None
+2025-12-17 23:20:19,991 - src.data.api_client - INFO - Fetching positions for session=9684
+2025-12-17 23:20:21,430 - src.data.api_client - INFO - Fetching weather for session=9684
+2025-12-17 23:20:23,256 - src.data.api_client - INFO - Fetching pit stops for session=9684
+2025-12-17 23:20:24,697 - src.data.api_client - INFO - Fetching intervals for session=9684
+2025-12-17 23:20:26,087 - src.data.api_client - INFO - Fetching drivers for session=9684
+2025-12-17 23:20:27,572 - src.data.data_collector - INFO - Collecting data for Day 3 (session_key: 9685)
+2025-12-17 23:20:27,573 - src.data.api_client - INFO - Fetching laps for session=9685, driver=None
+2025-12-17 23:20:30,405 - src.data.api_client - INFO - Fetching positions for session=9685
+2025-12-17 23:20:31,795 - src.data.api_client - INFO - Fetching weather for session=9685
+2025-12-17 23:20:33,501 - src.data.api_client - INFO - Fetching pit stops for session=9685
+2025-12-17 23:20:34,941 - src.data.api_client - INFO - Fetching intervals for session=9685
+2025-12-17 23:20:36,306 - src.data.api_client - INFO - Fetching drivers for session=9685
+2025-12-17 23:20:37,730 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9686)
+2025-12-17 23:20:37,731 - src.data.api_client - INFO - Fetching laps for session=9686, driver=None
+2025-12-17 23:20:39,891 - src.data.api_client - INFO - Fetching positions for session=9686
+2025-12-17 23:20:41,564 - src.data.api_client - INFO - Fetching weather for session=9686
+2025-12-17 23:20:42,938 - src.data.api_client - INFO - Fetching pit stops for session=9686
+2025-12-17 23:20:44,363 - src.data.api_client - INFO - Fetching intervals for session=9686
+2025-12-17 23:20:45,793 - src.data.api_client - INFO - Fetching drivers for session=9686
+2025-12-17 23:20:47,225 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9687)
+2025-12-17 23:20:47,226 - src.data.api_client - INFO - Fetching laps for session=9687, driver=None
+2025-12-17 23:20:49,427 - src.data.api_client - INFO - Fetching positions for session=9687
+2025-12-17 23:20:50,856 - src.data.api_client - INFO - Fetching weather for session=9687
+2025-12-17 23:20:52,262 - src.data.api_client - INFO - Fetching pit stops for session=9687
+2025-12-17 23:20:53,783 - src.data.api_client - INFO - Fetching intervals for session=9687
+2025-12-17 23:20:55,144 - src.data.api_client - INFO - Fetching drivers for session=9687
+2025-12-17 23:20:56,652 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9688)
+2025-12-17 23:20:56,653 - src.data.api_client - INFO - Fetching laps for session=9688, driver=None
+2025-12-17 23:20:58,967 - src.data.api_client - INFO - Fetching positions for session=9688
+2025-12-17 23:21:00,582 - src.data.api_client - INFO - Fetching weather for session=9688
+2025-12-17 23:21:01,974 - src.data.api_client - INFO - Fetching pit stops for session=9688
+2025-12-17 23:21:03,405 - src.data.api_client - INFO - Fetching intervals for session=9688
+2025-12-17 23:21:04,837 - src.data.api_client - INFO - Fetching drivers for session=9688
+2025-12-17 23:21:06,276 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9689)
+2025-12-17 23:21:06,277 - src.data.api_client - INFO - Fetching laps for session=9689, driver=None
+2025-12-17 23:21:08,428 - src.data.api_client - INFO - Fetching positions for session=9689
+2025-12-17 23:21:10,169 - src.data.api_client - INFO - Fetching weather for session=9689
+2025-12-17 23:21:11,605 - src.data.api_client - INFO - Fetching pit stops for session=9689
+2025-12-17 23:21:13,038 - src.data.api_client - INFO - Fetching intervals for session=9689
+2025-12-17 23:21:14,409 - src.data.api_client - INFO - Fetching drivers for session=9689
+2025-12-17 23:21:15,907 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9693)
+2025-12-17 23:21:15,907 - src.data.api_client - INFO - Fetching laps for session=9693, driver=None
+2025-12-17 23:21:18,753 - src.data.api_client - INFO - Fetching positions for session=9693
+2025-12-17 23:21:20,203 - src.data.api_client - INFO - Fetching weather for session=9693
+2025-12-17 23:21:21,639 - src.data.api_client - INFO - Fetching pit stops for session=9693
+2025-12-17 23:21:23,065 - src.data.api_client - INFO - Fetching intervals for session=9693
+2025-12-17 23:21:27,244 - src.data.api_client - INFO - Fetching drivers for session=9693
+2025-12-17 23:21:28,801 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9988)
+2025-12-17 23:21:28,802 - src.data.api_client - INFO - Fetching laps for session=9988, driver=None
+2025-12-17 23:21:31,149 - src.data.api_client - INFO - Fetching positions for session=9988
+2025-12-17 23:21:32,799 - src.data.api_client - INFO - Fetching weather for session=9988
+2025-12-17 23:21:34,329 - src.data.api_client - INFO - Fetching pit stops for session=9988
+2025-12-17 23:21:35,772 - src.data.api_client - INFO - Fetching intervals for session=9988
+2025-12-17 23:21:37,195 - src.data.api_client - INFO - Fetching drivers for session=9988
+2025-12-17 23:21:38,620 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9989)
+2025-12-17 23:21:38,620 - src.data.api_client - INFO - Fetching laps for session=9989, driver=None
+2025-12-17 23:21:40,887 - src.data.api_client - INFO - Fetching positions for session=9989
+2025-12-17 23:21:42,632 - src.data.api_client - INFO - Fetching weather for session=9989
+2025-12-17 23:21:44,172 - src.data.api_client - INFO - Fetching pit stops for session=9989
+2025-12-17 23:21:45,599 - src.data.api_client - INFO - Fetching intervals for session=9989
+2025-12-17 23:21:47,028 - src.data.api_client - INFO - Fetching drivers for session=9989
+2025-12-17 23:21:48,465 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9993)
+2025-12-17 23:21:48,467 - src.data.api_client - INFO - Fetching laps for session=9993, driver=None
+2025-12-17 23:21:50,824 - src.data.api_client - INFO - Fetching positions for session=9993
+2025-12-17 23:21:52,210 - src.data.api_client - INFO - Fetching weather for session=9993
+2025-12-17 23:25:07,005 - __main__ - INFO - Starting F1 Predictor in 'collect' mode
+2025-12-17 23:25:07,005 - __main__ - INFO - === Starting Data Collection ===
+2025-12-17 23:25:07,005 - __main__ - INFO - Collecting data for seasons: [2025]
+2025-12-17 23:25:07,005 - __main__ - INFO - 
+--- Collecting 2025 Season ---
+2025-12-17 23:25:07,005 - src.data.data_collector - INFO - Collecting data for 2025 season
+2025-12-17 23:25:07,005 - src.data.api_client - INFO - Fetching sessions for year=2025, type=None
+2025-12-17 23:25:07,882 - src.data.data_collector - INFO - Found 123 sessions
+2025-12-17 23:25:07,883 - src.data.data_collector - INFO - Collecting data for Day 1 (session_key: 9683)
+2025-12-17 23:25:07,883 - src.data.data_collector - INFO - Collecting data for Day 2 (session_key: 9684)
+2025-12-17 23:25:07,884 - src.data.data_collector - INFO - Collecting data for Day 3 (session_key: 9685)
+2025-12-17 23:25:07,885 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9686)
+2025-12-17 23:25:07,885 - src.data.api_client - INFO - Fetching laps for session=9683, driver=None
+2025-12-17 23:25:07,886 - src.data.api_client - INFO - Fetching positions for session=9683
+2025-12-17 23:25:07,886 - src.data.api_client - INFO - Fetching weather for session=9683
+2025-12-17 23:25:07,887 - src.data.api_client - INFO - Fetching laps for session=9684, driver=None
+2025-12-17 23:25:07,888 - src.data.api_client - INFO - Fetching laps for session=9686, driver=None
+2025-12-17 23:25:07,891 - src.data.api_client - INFO - Fetching laps for session=9685, driver=None
+2025-12-17 23:25:07,895 - src.data.api_client - INFO - Fetching pit stops for session=9683
+2025-12-17 23:25:07,895 - src.data.api_client - INFO - Fetching positions for session=9684
+2025-12-17 23:25:07,896 - src.data.api_client - INFO - Fetching positions for session=9686
+2025-12-17 23:25:07,898 - src.data.api_client - INFO - Fetching positions for session=9685
+2025-12-17 23:25:07,903 - src.data.api_client - INFO - Fetching intervals for session=9683
+2025-12-17 23:25:07,905 - src.data.api_client - INFO - Fetching weather for session=9684
+2025-12-17 23:25:07,906 - src.data.api_client - INFO - Fetching weather for session=9686
+2025-12-17 23:25:07,907 - src.data.api_client - INFO - Fetching weather for session=9685
+2025-12-17 23:25:07,912 - src.data.api_client - INFO - Fetching drivers for session=9683
+2025-12-17 23:25:07,914 - src.data.api_client - INFO - Fetching pit stops for session=9684
+2025-12-17 23:25:07,915 - src.data.api_client - INFO - Fetching pit stops for session=9686
+2025-12-17 23:25:07,918 - src.data.api_client - INFO - Fetching pit stops for session=9685
+2025-12-17 23:25:07,924 - src.data.api_client - INFO - Fetching intervals for session=9684
+2025-12-17 23:25:07,924 - src.data.api_client - INFO - Fetching intervals for session=9686
+2025-12-17 23:25:07,930 - src.data.api_client - INFO - Fetching intervals for session=9685
+2025-12-17 23:25:07,933 - src.data.api_client - INFO - Fetching drivers for session=9684
+2025-12-17 23:25:07,933 - src.data.api_client - INFO - Fetching drivers for session=9686
+2025-12-17 23:25:07,934 - src.data.api_client - INFO - Fetching drivers for session=9685
+2025-12-17 23:25:10,521 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9686
+2025-12-17 23:25:10,527 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9685
+2025-12-17 23:25:10,543 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9684
+2025-12-17 23:25:10,547 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9684
+2025-12-17 23:25:10,547 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9684
+2025-12-17 23:25:10,554 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,560 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,563 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,563 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,583 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,598 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,632 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,790 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,870 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,887 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:10,888 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:11,100 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9687)
+2025-12-17 23:25:11,101 - src.data.api_client - INFO - Fetching laps for session=9687, driver=None
+2025-12-17 23:25:11,101 - src.data.api_client - INFO - Fetching positions for session=9687
+2025-12-17 23:25:11,101 - src.data.api_client - INFO - Fetching weather for session=9687
+2025-12-17 23:25:11,102 - src.data.api_client - INFO - Fetching pit stops for session=9687
+2025-12-17 23:25:11,103 - src.data.api_client - INFO - Fetching intervals for session=9687
+2025-12-17 23:25:11,103 - src.data.api_client - INFO - Fetching drivers for session=9687
+2025-12-17 23:25:12,097 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9688)
+2025-12-17 23:25:12,098 - src.data.api_client - INFO - Fetching laps for session=9688, driver=None
+2025-12-17 23:25:12,099 - src.data.api_client - INFO - Fetching positions for session=9688
+2025-12-17 23:25:12,100 - src.data.api_client - INFO - Fetching weather for session=9688
+2025-12-17 23:25:12,100 - src.data.api_client - INFO - Fetching pit stops for session=9688
+2025-12-17 23:25:12,102 - src.data.api_client - INFO - Fetching intervals for session=9688
+2025-12-17 23:25:12,105 - src.data.api_client - INFO - Fetching drivers for session=9688
+2025-12-17 23:25:12,565 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9689)
+2025-12-17 23:25:12,566 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9693)
+2025-12-17 23:25:12,566 - src.data.api_client - INFO - Fetching laps for session=9689, driver=None
+2025-12-17 23:25:12,566 - src.data.api_client - INFO - Fetching positions for session=9689
+2025-12-17 23:25:12,566 - src.data.api_client - INFO - Fetching weather for session=9689
+2025-12-17 23:25:12,567 - src.data.api_client - INFO - Fetching pit stops for session=9689
+2025-12-17 23:25:12,567 - src.data.api_client - INFO - Fetching intervals for session=9689
+2025-12-17 23:25:12,567 - src.data.api_client - INFO - Fetching drivers for session=9689
+2025-12-17 23:25:12,569 - src.data.api_client - INFO - Fetching laps for session=9693, driver=None
+2025-12-17 23:25:12,569 - src.data.api_client - INFO - Fetching positions for session=9693
+2025-12-17 23:25:12,569 - src.data.api_client - INFO - Fetching weather for session=9693
+2025-12-17 23:25:12,569 - src.data.api_client - INFO - Fetching pit stops for session=9693
+2025-12-17 23:25:12,570 - src.data.api_client - INFO - Fetching intervals for session=9693
+2025-12-17 23:25:12,570 - src.data.api_client - INFO - Fetching drivers for session=9693
+2025-12-17 23:25:12,873 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9988)
+2025-12-17 23:25:12,873 - src.data.api_client - INFO - Fetching laps for session=9988, driver=None
+2025-12-17 23:25:12,874 - src.data.api_client - INFO - Fetching positions for session=9988
+2025-12-17 23:25:12,874 - src.data.api_client - INFO - Fetching weather for session=9988
+2025-12-17 23:25:12,875 - src.data.api_client - INFO - Fetching pit stops for session=9988
+2025-12-17 23:25:12,876 - src.data.api_client - INFO - Fetching intervals for session=9988
+2025-12-17 23:25:12,876 - src.data.api_client - INFO - Fetching drivers for session=9988
+2025-12-17 23:25:12,934 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9693
+2025-12-17 23:25:13,083 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9693
+2025-12-17 23:25:13,211 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9988
+2025-12-17 23:25:13,362 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:13,468 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:13,480 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:13,586 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:13,689 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9989)
+2025-12-17 23:25:13,690 - src.data.api_client - INFO - Fetching laps for session=9989, driver=None
+2025-12-17 23:25:13,690 - src.data.api_client - INFO - Fetching positions for session=9989
+2025-12-17 23:25:13,690 - src.data.api_client - INFO - Fetching weather for session=9989
+2025-12-17 23:25:13,690 - src.data.api_client - INFO - Fetching pit stops for session=9989
+2025-12-17 23:25:13,692 - src.data.api_client - INFO - Fetching intervals for session=9989
+2025-12-17 23:25:13,692 - src.data.api_client - INFO - Fetching drivers for session=9989
+2025-12-17 23:25:14,053 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9989
+2025-12-17 23:25:14,574 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:14,589 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:14,809 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9993)
+2025-12-17 23:25:14,809 - src.data.api_client - INFO - Fetching laps for session=9993, driver=None
+2025-12-17 23:25:14,810 - src.data.api_client - INFO - Fetching positions for session=9993
+2025-12-17 23:25:14,810 - src.data.api_client - INFO - Fetching weather for session=9993
+2025-12-17 23:25:14,811 - src.data.api_client - INFO - Fetching pit stops for session=9993
+2025-12-17 23:25:14,821 - src.data.api_client - INFO - Fetching intervals for session=9993
+2025-12-17 23:25:14,822 - src.data.api_client - INFO - Fetching drivers for session=9993
+2025-12-17 23:25:15,077 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9994)
+2025-12-17 23:25:15,077 - src.data.api_client - INFO - Fetching laps for session=9994, driver=None
+2025-12-17 23:25:15,078 - src.data.api_client - INFO - Fetching positions for session=9994
+2025-12-17 23:25:15,078 - src.data.api_client - INFO - Fetching weather for session=9994
+2025-12-17 23:25:15,079 - src.data.api_client - INFO - Fetching pit stops for session=9994
+2025-12-17 23:25:15,080 - src.data.api_client - INFO - Fetching intervals for session=9994
+2025-12-17 23:25:15,080 - src.data.api_client - INFO - Fetching drivers for session=9994
+2025-12-17 23:25:15,608 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9998)
+2025-12-17 23:25:15,609 - src.data.api_client - INFO - Fetching laps for session=9998, driver=None
+2025-12-17 23:25:15,609 - src.data.api_client - INFO - Fetching positions for session=9998
+2025-12-17 23:25:15,609 - src.data.api_client - INFO - Fetching weather for session=9998
+2025-12-17 23:25:15,609 - src.data.api_client - INFO - Fetching pit stops for session=9998
+2025-12-17 23:25:15,610 - src.data.api_client - INFO - Fetching intervals for session=9998
+2025-12-17 23:25:15,610 - src.data.api_client - INFO - Fetching drivers for session=9998
+2025-12-17 23:25:15,948 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9998
+2025-12-17 23:25:15,953 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9998
+2025-12-17 23:25:16,362 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:16,431 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9999)
+2025-12-17 23:25:16,431 - src.data.api_client - INFO - Fetching laps for session=9999, driver=None
+2025-12-17 23:25:16,431 - src.data.api_client - INFO - Fetching positions for session=9999
+2025-12-17 23:25:16,431 - src.data.api_client - INFO - Fetching weather for session=9999
+2025-12-17 23:25:16,432 - src.data.api_client - INFO - Fetching pit stops for session=9999
+2025-12-17 23:25:16,433 - src.data.api_client - INFO - Fetching intervals for session=9999
+2025-12-17 23:25:16,433 - src.data.api_client - INFO - Fetching drivers for session=9999
+2025-12-17 23:25:16,568 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 10000)
+2025-12-17 23:25:16,568 - src.data.api_client - INFO - Fetching laps for session=10000, driver=None
+2025-12-17 23:25:16,569 - src.data.api_client - INFO - Fetching positions for session=10000
+2025-12-17 23:25:16,570 - src.data.api_client - INFO - Fetching weather for session=10000
+2025-12-17 23:25:16,570 - src.data.api_client - INFO - Fetching pit stops for session=10000
+2025-12-17 23:25:16,571 - src.data.api_client - INFO - Fetching intervals for session=10000
+2025-12-17 23:25:16,571 - src.data.api_client - INFO - Fetching drivers for session=10000
+2025-12-17 23:25:17,057 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 10001)
+2025-12-17 23:25:17,058 - src.data.api_client - INFO - Fetching laps for session=10001, driver=None
+2025-12-17 23:25:17,058 - src.data.api_client - INFO - Fetching positions for session=10001
+2025-12-17 23:25:17,058 - src.data.api_client - INFO - Fetching weather for session=10001
+2025-12-17 23:25:17,059 - src.data.api_client - INFO - Fetching pit stops for session=10001
+2025-12-17 23:25:17,060 - src.data.api_client - INFO - Fetching intervals for session=10001
+2025-12-17 23:25:17,061 - src.data.api_client - INFO - Fetching drivers for session=10001
+2025-12-17 23:25:17,086 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10000
+2025-12-17 23:25:17,303 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9998
+2025-12-17 23:25:17,398 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10001
+2025-12-17 23:25:17,400 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10001
+2025-12-17 23:25:17,407 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10001
+2025-12-17 23:25:17,422 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:17,598 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:17,598 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10001
+2025-12-17 23:25:17,712 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:18,005 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:18,218 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 10002)
+2025-12-17 23:25:18,218 - src.data.api_client - INFO - Fetching laps for session=10002, driver=None
+2025-12-17 23:25:18,219 - src.data.api_client - INFO - Fetching positions for session=10002
+2025-12-17 23:25:18,220 - src.data.api_client - INFO - Fetching weather for session=10002
+2025-12-17 23:25:18,220 - src.data.api_client - INFO - Fetching pit stops for session=10002
+2025-12-17 23:25:18,222 - src.data.api_client - INFO - Fetching intervals for session=10002
+2025-12-17 23:25:18,222 - src.data.api_client - INFO - Fetching drivers for session=10002
+2025-12-17 23:25:18,573 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10002
+2025-12-17 23:25:18,671 - src.data.data_collector - INFO - Collecting data for Race (session_key: 10006)
+2025-12-17 23:25:18,671 - src.data.api_client - INFO - Fetching laps for session=10006, driver=None
+2025-12-17 23:25:18,671 - src.data.api_client - INFO - Fetching positions for session=10006
+2025-12-17 23:25:18,672 - src.data.api_client - INFO - Fetching weather for session=10006
+2025-12-17 23:25:18,672 - src.data.api_client - INFO - Fetching pit stops for session=10006
+2025-12-17 23:25:18,672 - src.data.api_client - INFO - Fetching intervals for session=10006
+2025-12-17 23:25:18,673 - src.data.api_client - INFO - Fetching drivers for session=10006
+2025-12-17 23:25:19,023 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10006
+2025-12-17 23:25:19,191 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 10007)
+2025-12-17 23:25:19,191 - src.data.api_client - INFO - Fetching laps for session=10007, driver=None
+2025-12-17 23:25:19,192 - src.data.api_client - INFO - Fetching positions for session=10007
+2025-12-17 23:25:19,193 - src.data.api_client - INFO - Fetching weather for session=10007
+2025-12-17 23:25:19,194 - src.data.api_client - INFO - Fetching pit stops for session=10007
+2025-12-17 23:25:19,195 - src.data.api_client - INFO - Fetching intervals for session=10007
+2025-12-17 23:25:19,195 - src.data.api_client - INFO - Fetching drivers for session=10007
+2025-12-17 23:25:19,537 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10007
+2025-12-17 23:25:19,538 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10007
+2025-12-17 23:25:19,544 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10007
+2025-12-17 23:25:19,548 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10007
+2025-12-17 23:25:19,651 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9998
+2025-12-17 23:25:19,651 - src.data.data_collector - WARNING -   ✗ weather failed for session 9998: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9998
+2025-12-17 23:25:19,652 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 10008)
+2025-12-17 23:25:19,652 - src.data.api_client - INFO - Fetching laps for session=10008, driver=None
+2025-12-17 23:25:19,653 - src.data.api_client - INFO - Fetching positions for session=10008
+2025-12-17 23:25:19,653 - src.data.api_client - INFO - Fetching weather for session=10008
+2025-12-17 23:25:19,655 - src.data.api_client - INFO - Fetching pit stops for session=10008
+2025-12-17 23:25:19,655 - src.data.api_client - INFO - Fetching intervals for session=10008
+2025-12-17 23:25:19,657 - src.data.api_client - INFO - Fetching drivers for session=10008
+2025-12-17 23:25:19,923 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10002
+2025-12-17 23:25:20,010 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10008
+2025-12-17 23:25:20,893 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10007
+2025-12-17 23:25:20,912 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:20,916 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:21,407 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:21,614 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 10009)
+2025-12-17 23:25:21,615 - src.data.api_client - INFO - Fetching laps for session=10009, driver=None
+2025-12-17 23:25:21,615 - src.data.api_client - INFO - Fetching positions for session=10009
+2025-12-17 23:25:21,615 - src.data.api_client - INFO - Fetching weather for session=10009
+2025-12-17 23:25:21,616 - src.data.api_client - INFO - Fetching pit stops for session=10009
+2025-12-17 23:25:21,617 - src.data.api_client - INFO - Fetching intervals for session=10009
+2025-12-17 23:25:21,619 - src.data.api_client - INFO - Fetching drivers for session=10009
+2025-12-17 23:25:21,965 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10009
+2025-12-17 23:25:22,512 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 10010)
+2025-12-17 23:25:22,512 - src.data.api_client - INFO - Fetching laps for session=10010, driver=None
+2025-12-17 23:25:22,513 - src.data.api_client - INFO - Fetching positions for session=10010
+2025-12-17 23:25:22,513 - src.data.api_client - INFO - Fetching weather for session=10010
+2025-12-17 23:25:22,514 - src.data.api_client - INFO - Fetching pit stops for session=10010
+2025-12-17 23:25:22,515 - src.data.api_client - INFO - Fetching intervals for session=10010
+2025-12-17 23:25:22,517 - src.data.api_client - INFO - Fetching drivers for session=10010
+2025-12-17 23:25:22,568 - src.data.data_collector - INFO - Collecting data for Race (session_key: 10014)
+2025-12-17 23:25:22,569 - src.data.api_client - INFO - Fetching laps for session=10014, driver=None
+2025-12-17 23:25:22,569 - src.data.api_client - INFO - Fetching positions for session=10014
+2025-12-17 23:25:22,569 - src.data.api_client - INFO - Fetching weather for session=10014
+2025-12-17 23:25:22,569 - src.data.api_client - INFO - Fetching pit stops for session=10014
+2025-12-17 23:25:22,570 - src.data.api_client - INFO - Fetching intervals for session=10014
+2025-12-17 23:25:22,570 - src.data.api_client - INFO - Fetching drivers for session=10014
+2025-12-17 23:25:22,860 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10010
+2025-12-17 23:25:22,917 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10014
+2025-12-17 23:25:23,072 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10014
+2025-12-17 23:25:23,073 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10014
+2025-12-17 23:25:23,251 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10007
+2025-12-17 23:25:23,251 - src.data.data_collector - WARNING -   ✗ weather failed for session 10007: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10007
+2025-12-17 23:25:23,252 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 10015)
+2025-12-17 23:25:23,252 - src.data.api_client - INFO - Fetching laps for session=10015, driver=None
+2025-12-17 23:25:23,252 - src.data.api_client - INFO - Fetching positions for session=10015
+2025-12-17 23:25:23,253 - src.data.api_client - INFO - Fetching weather for session=10015
+2025-12-17 23:25:23,254 - src.data.api_client - INFO - Fetching pit stops for session=10015
+2025-12-17 23:25:23,254 - src.data.api_client - INFO - Fetching intervals for session=10015
+2025-12-17 23:25:23,256 - src.data.api_client - INFO - Fetching drivers for session=10015
+2025-12-17 23:25:23,546 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 10016)
+2025-12-17 23:25:23,547 - src.data.api_client - INFO - Fetching laps for session=10016, driver=None
+2025-12-17 23:25:23,548 - src.data.api_client - INFO - Fetching positions for session=10016
+2025-12-17 23:25:23,549 - src.data.api_client - INFO - Fetching weather for session=10016
+2025-12-17 23:25:23,551 - src.data.api_client - INFO - Fetching pit stops for session=10016
+2025-12-17 23:25:23,552 - src.data.api_client - INFO - Fetching intervals for session=10016
+2025-12-17 23:25:23,554 - src.data.api_client - INFO - Fetching drivers for session=10016
+2025-12-17 23:25:23,595 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10015
+2025-12-17 23:25:23,603 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10015
+2025-12-17 23:25:23,614 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10015
+2025-12-17 23:25:24,258 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10014
+2025-12-17 23:25:24,407 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10014
+2025-12-17 23:25:24,423 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:24,423 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10014
+2025-12-17 23:25:24,430 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 10017)
+2025-12-17 23:25:24,430 - src.data.api_client - INFO - Fetching laps for session=10017, driver=None
+2025-12-17 23:25:24,430 - src.data.api_client - INFO - Fetching positions for session=10017
+2025-12-17 23:25:24,431 - src.data.api_client - INFO - Fetching weather for session=10017
+2025-12-17 23:25:24,431 - src.data.api_client - INFO - Fetching pit stops for session=10017
+2025-12-17 23:25:24,432 - src.data.api_client - INFO - Fetching intervals for session=10017
+2025-12-17 23:25:24,432 - src.data.api_client - INFO - Fetching drivers for session=10017
+2025-12-17 23:25:24,773 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10017
+2025-12-17 23:25:24,778 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10017
+2025-12-17 23:25:24,779 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10017
+2025-12-17 23:25:24,795 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10017
+2025-12-17 23:25:24,939 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10015
+2025-12-17 23:25:24,987 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:25,165 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 10018)
+2025-12-17 23:25:25,165 - src.data.api_client - INFO - Fetching laps for session=10018, driver=None
+2025-12-17 23:25:25,166 - src.data.api_client - INFO - Fetching positions for session=10018
+2025-12-17 23:25:25,166 - src.data.api_client - INFO - Fetching weather for session=10018
+2025-12-17 23:25:25,167 - src.data.api_client - INFO - Fetching pit stops for session=10018
+2025-12-17 23:25:25,168 - src.data.api_client - INFO - Fetching intervals for session=10018
+2025-12-17 23:25:25,169 - src.data.api_client - INFO - Fetching drivers for session=10018
+2025-12-17 23:25:25,525 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10018
+2025-12-17 23:25:25,766 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:26,376 - src.data.data_collector - INFO - Collecting data for Race (session_key: 10022)
+2025-12-17 23:25:26,376 - src.data.api_client - INFO - Fetching laps for session=10022, driver=None
+2025-12-17 23:25:26,377 - src.data.api_client - INFO - Fetching positions for session=10022
+2025-12-17 23:25:26,377 - src.data.api_client - INFO - Fetching weather for session=10022
+2025-12-17 23:25:26,378 - src.data.api_client - INFO - Fetching pit stops for session=10022
+2025-12-17 23:25:26,379 - src.data.api_client - INFO - Fetching intervals for session=10022
+2025-12-17 23:25:26,380 - src.data.api_client - INFO - Fetching drivers for session=10022
+2025-12-17 23:25:26,730 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10022
+2025-12-17 23:25:26,733 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10022
+2025-12-17 23:25:26,736 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10022
+2025-12-17 23:25:26,759 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10014
+2025-12-17 23:25:26,766 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10014
+2025-12-17 23:25:27,325 - src.data.data_collector - WARNING -   ✗ weather failed for session 10014: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=10014
+2025-12-17 23:25:27,366 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:27,521 - src.data.data_collector - WARNING -   ✗ drivers failed for session 10014: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10014
+2025-12-17 23:25:27,522 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 10023)
+2025-12-17 23:25:27,522 - src.data.api_client - INFO - Fetching laps for session=10023, driver=None
+2025-12-17 23:25:27,522 - src.data.api_client - INFO - Fetching positions for session=10023
+2025-12-17 23:25:27,523 - src.data.api_client - INFO - Fetching weather for session=10023
+2025-12-17 23:25:27,523 - src.data.api_client - INFO - Fetching pit stops for session=10023
+2025-12-17 23:25:27,523 - src.data.api_client - INFO - Fetching intervals for session=10023
+2025-12-17 23:25:27,524 - src.data.api_client - INFO - Fetching drivers for session=10023
+2025-12-17 23:25:27,524 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 10024)
+2025-12-17 23:25:27,525 - src.data.api_client - INFO - Fetching laps for session=10024, driver=None
+2025-12-17 23:25:27,526 - src.data.api_client - INFO - Fetching positions for session=10024
+2025-12-17 23:25:27,527 - src.data.api_client - INFO - Fetching weather for session=10024
+2025-12-17 23:25:27,528 - src.data.api_client - INFO - Fetching pit stops for session=10024
+2025-12-17 23:25:27,528 - src.data.api_client - INFO - Fetching intervals for session=10024
+2025-12-17 23:25:27,528 - src.data.api_client - INFO - Fetching drivers for session=10024
+2025-12-17 23:25:27,573 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 10028)
+2025-12-17 23:25:27,573 - src.data.api_client - INFO - Fetching laps for session=10028, driver=None
+2025-12-17 23:25:27,573 - src.data.api_client - INFO - Fetching positions for session=10028
+2025-12-17 23:25:27,574 - src.data.api_client - INFO - Fetching weather for session=10028
+2025-12-17 23:25:27,574 - src.data.api_client - INFO - Fetching pit stops for session=10028
+2025-12-17 23:25:27,574 - src.data.api_client - INFO - Fetching intervals for session=10028
+2025-12-17 23:25:27,575 - src.data.api_client - INFO - Fetching drivers for session=10028
+2025-12-17 23:25:27,878 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10024
+2025-12-17 23:25:28,054 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10024
+2025-12-17 23:25:28,366 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,622 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,622 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10028
+2025-12-17 23:25:28,664 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,664 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=10028
+2025-12-17 23:25:28,700 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,700 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10028
+2025-12-17 23:25:28,701 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,701 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10028
+2025-12-17 23:25:28,706 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,706 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=10028
+2025-12-17 23:25:28,721 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,721 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10022
+2025-12-17 23:25:28,724 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,724 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10022
+2025-12-17 23:25:28,734 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,734 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10022
+2025-12-17 23:25:28,754 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:28,817 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:29,310 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 10029)
+2025-12-17 23:25:29,316 - src.data.api_client - INFO - Fetching laps for session=10029, driver=None
+2025-12-17 23:25:29,318 - src.data.api_client - INFO - Fetching positions for session=10029
+2025-12-17 23:25:29,320 - src.data.api_client - INFO - Fetching drivers for session=10029
+2025-12-17 23:25:29,318 - src.data.api_client - INFO - Fetching weather for session=10029
+2025-12-17 23:25:29,318 - src.data.api_client - INFO - Fetching pit stops for session=10029
+2025-12-17 23:25:29,320 - src.data.api_client - INFO - Fetching intervals for session=10029
+2025-12-17 23:25:29,607 - src.data.data_collector - INFO - Collecting data for Race (session_key: 10033)
+2025-12-17 23:25:29,607 - src.data.api_client - INFO - Fetching laps for session=10033, driver=None
+2025-12-17 23:25:29,607 - src.data.api_client - INFO - Fetching positions for session=10033
+2025-12-17 23:25:29,609 - src.data.api_client - INFO - Fetching weather for session=10033
+2025-12-17 23:25:29,609 - src.data.api_client - INFO - Fetching pit stops for session=10033
+2025-12-17 23:25:29,609 - src.data.api_client - INFO - Fetching intervals for session=10033
+2025-12-17 23:25:29,610 - src.data.api_client - INFO - Fetching drivers for session=10033
+2025-12-17 23:25:29,946 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10033
+2025-12-17 23:25:29,964 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10033
+2025-12-17 23:25:30,045 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10028
+2025-12-17 23:25:30,112 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=10028
+2025-12-17 23:25:30,121 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=10033
+2025-12-17 23:25:30,138 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:31,500 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:31,674 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9980)
+2025-12-17 23:25:31,674 - src.data.api_client - INFO - Fetching laps for session=9980, driver=None
+2025-12-17 23:25:31,675 - src.data.api_client - INFO - Fetching positions for session=9980
+2025-12-17 23:25:31,675 - src.data.api_client - INFO - Fetching weather for session=9980
+2025-12-17 23:25:31,676 - src.data.api_client - INFO - Fetching pit stops for session=9980
+2025-12-17 23:25:31,677 - src.data.api_client - INFO - Fetching intervals for session=9980
+2025-12-17 23:25:31,677 - src.data.api_client - INFO - Fetching drivers for session=9980
+2025-12-17 23:25:32,064 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9980
+2025-12-17 23:25:32,066 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9980
+2025-12-17 23:25:32,533 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10028
+2025-12-17 23:25:32,759 - src.data.data_collector - WARNING -   ✗ intervals failed for session 10028: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=10028
+2025-12-17 23:25:32,760 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9981)
+2025-12-17 23:25:32,761 - src.data.api_client - INFO - Fetching laps for session=9981, driver=None
+2025-12-17 23:25:32,761 - src.data.api_client - INFO - Fetching positions for session=9981
+2025-12-17 23:25:32,761 - src.data.api_client - INFO - Fetching weather for session=9981
+2025-12-17 23:25:32,762 - src.data.api_client - INFO - Fetching pit stops for session=9981
+2025-12-17 23:25:32,764 - src.data.api_client - INFO - Fetching intervals for session=9981
+2025-12-17 23:25:32,765 - src.data.api_client - INFO - Fetching drivers for session=9981
+2025-12-17 23:25:33,106 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9981
+2025-12-17 23:25:33,107 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9981
+2025-12-17 23:25:33,122 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9981
+2025-12-17 23:25:34,020 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:34,043 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9982)
+2025-12-17 23:25:34,043 - src.data.api_client - INFO - Fetching laps for session=9982, driver=None
+2025-12-17 23:25:34,043 - src.data.api_client - INFO - Fetching positions for session=9982
+2025-12-17 23:25:34,043 - src.data.api_client - INFO - Fetching weather for session=9982
+2025-12-17 23:25:34,044 - src.data.api_client - INFO - Fetching pit stops for session=9982
+2025-12-17 23:25:34,046 - src.data.api_client - INFO - Fetching intervals for session=9982
+2025-12-17 23:25:34,046 - src.data.api_client - INFO - Fetching drivers for session=9982
+2025-12-17 23:25:34,255 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9983)
+2025-12-17 23:25:34,255 - src.data.api_client - INFO - Fetching laps for session=9983, driver=None
+2025-12-17 23:25:34,256 - src.data.api_client - INFO - Fetching positions for session=9983
+2025-12-17 23:25:34,256 - src.data.api_client - INFO - Fetching weather for session=9983
+2025-12-17 23:25:34,256 - src.data.api_client - INFO - Fetching pit stops for session=9983
+2025-12-17 23:25:34,257 - src.data.api_client - INFO - Fetching intervals for session=9983
+2025-12-17 23:25:34,258 - src.data.api_client - INFO - Fetching drivers for session=9983
+2025-12-17 23:25:34,597 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9983
+2025-12-17 23:25:34,965 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9987)
+2025-12-17 23:25:34,966 - src.data.api_client - INFO - Fetching laps for session=9987, driver=None
+2025-12-17 23:25:34,966 - src.data.api_client - INFO - Fetching positions for session=9987
+2025-12-17 23:25:34,966 - src.data.api_client - INFO - Fetching weather for session=9987
+2025-12-17 23:25:34,966 - src.data.api_client - INFO - Fetching pit stops for session=9987
+2025-12-17 23:25:34,967 - src.data.api_client - INFO - Fetching intervals for session=9987
+2025-12-17 23:25:34,968 - src.data.api_client - INFO - Fetching drivers for session=9987
+2025-12-17 23:25:34,973 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9983
+2025-12-17 23:25:34,974 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9983
+2025-12-17 23:25:35,308 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9987
+2025-12-17 23:25:35,308 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9987
+2025-12-17 23:25:35,317 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9987
+2025-12-17 23:25:35,384 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:35,478 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9972)
+2025-12-17 23:25:35,478 - src.data.api_client - INFO - Fetching laps for session=9972, driver=None
+2025-12-17 23:25:35,479 - src.data.api_client - INFO - Fetching positions for session=9972
+2025-12-17 23:25:35,479 - src.data.api_client - INFO - Fetching weather for session=9972
+2025-12-17 23:25:35,480 - src.data.api_client - INFO - Fetching pit stops for session=9972
+2025-12-17 23:25:35,480 - src.data.api_client - INFO - Fetching intervals for session=9972
+2025-12-17 23:25:35,481 - src.data.api_client - INFO - Fetching drivers for session=9972
+2025-12-17 23:25:35,824 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9972
+2025-12-17 23:25:35,835 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9972
+2025-12-17 23:25:35,836 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9972
+2025-12-17 23:25:35,897 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9973)
+2025-12-17 23:25:35,897 - src.data.api_client - INFO - Fetching laps for session=9973, driver=None
+2025-12-17 23:25:35,898 - src.data.api_client - INFO - Fetching positions for session=9973
+2025-12-17 23:25:35,899 - src.data.api_client - INFO - Fetching weather for session=9973
+2025-12-17 23:25:35,900 - src.data.api_client - INFO - Fetching pit stops for session=9973
+2025-12-17 23:25:35,901 - src.data.api_client - INFO - Fetching intervals for session=9973
+2025-12-17 23:25:35,902 - src.data.api_client - INFO - Fetching drivers for session=9973
+2025-12-17 23:25:36,250 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9973
+2025-12-17 23:25:36,253 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9973
+2025-12-17 23:25:36,579 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9974)
+2025-12-17 23:25:36,579 - src.data.api_client - INFO - Fetching laps for session=9974, driver=None
+2025-12-17 23:25:36,579 - src.data.api_client - INFO - Fetching positions for session=9974
+2025-12-17 23:25:36,579 - src.data.api_client - INFO - Fetching weather for session=9974
+2025-12-17 23:25:36,580 - src.data.api_client - INFO - Fetching pit stops for session=9974
+2025-12-17 23:25:36,580 - src.data.api_client - INFO - Fetching intervals for session=9974
+2025-12-17 23:25:36,581 - src.data.api_client - INFO - Fetching drivers for session=9974
+2025-12-17 23:25:36,673 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9987
+2025-12-17 23:25:37,178 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9972
+2025-12-17 23:25:37,183 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9972
+2025-12-17 23:25:37,192 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:37,192 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9972
+2025-12-17 23:25:37,596 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:37,596 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9973
+2025-12-17 23:25:37,853 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:37,999 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:38,103 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:38,317 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9975)
+2025-12-17 23:25:38,318 - src.data.api_client - INFO - Fetching laps for session=9975, driver=None
+2025-12-17 23:25:38,318 - src.data.api_client - INFO - Fetching positions for session=9975
+2025-12-17 23:25:38,319 - src.data.api_client - INFO - Fetching weather for session=9975
+2025-12-17 23:25:38,319 - src.data.api_client - INFO - Fetching pit stops for session=9975
+2025-12-17 23:25:38,320 - src.data.api_client - INFO - Fetching intervals for session=9975
+2025-12-17 23:25:38,320 - src.data.api_client - INFO - Fetching drivers for session=9975
+2025-12-17 23:25:39,368 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9979)
+2025-12-17 23:25:39,369 - src.data.api_client - INFO - Fetching laps for session=9979, driver=None
+2025-12-17 23:25:39,370 - src.data.api_client - INFO - Fetching positions for session=9979
+2025-12-17 23:25:39,370 - src.data.api_client - INFO - Fetching weather for session=9979
+2025-12-17 23:25:39,370 - src.data.api_client - INFO - Fetching pit stops for session=9979
+2025-12-17 23:25:39,372 - src.data.api_client - INFO - Fetching intervals for session=9979
+2025-12-17 23:25:39,374 - src.data.api_client - INFO - Fetching drivers for session=9979
+2025-12-17 23:25:39,761 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9964)
+2025-12-17 23:25:39,761 - src.data.api_client - INFO - Fetching laps for session=9964, driver=None
+2025-12-17 23:25:39,762 - src.data.api_client - INFO - Fetching positions for session=9964
+2025-12-17 23:25:39,763 - src.data.api_client - INFO - Fetching weather for session=9964
+2025-12-17 23:25:39,763 - src.data.api_client - INFO - Fetching pit stops for session=9964
+2025-12-17 23:25:39,764 - src.data.api_client - INFO - Fetching intervals for session=9964
+2025-12-17 23:25:39,765 - src.data.api_client - INFO - Fetching drivers for session=9964
+2025-12-17 23:25:40,108 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9964
+2025-12-17 23:25:40,109 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9964
+2025-12-17 23:25:40,181 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9965)
+2025-12-17 23:25:40,182 - src.data.api_client - INFO - Fetching laps for session=9965, driver=None
+2025-12-17 23:25:40,182 - src.data.api_client - INFO - Fetching positions for session=9965
+2025-12-17 23:25:40,182 - src.data.api_client - INFO - Fetching weather for session=9965
+2025-12-17 23:25:40,184 - src.data.api_client - INFO - Fetching pit stops for session=9965
+2025-12-17 23:25:40,186 - src.data.api_client - INFO - Fetching intervals for session=9965
+2025-12-17 23:25:40,187 - src.data.api_client - INFO - Fetching drivers for session=9965
+2025-12-17 23:25:40,193 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9966)
+2025-12-17 23:25:40,194 - src.data.api_client - INFO - Fetching laps for session=9966, driver=None
+2025-12-17 23:25:40,194 - src.data.api_client - INFO - Fetching positions for session=9966
+2025-12-17 23:25:40,195 - src.data.api_client - INFO - Fetching weather for session=9966
+2025-12-17 23:25:40,196 - src.data.api_client - INFO - Fetching pit stops for session=9966
+2025-12-17 23:25:40,197 - src.data.api_client - INFO - Fetching intervals for session=9966
+2025-12-17 23:25:40,198 - src.data.api_client - INFO - Fetching drivers for session=9966
+2025-12-17 23:25:40,261 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9964
+2025-12-17 23:25:40,544 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9965
+2025-12-17 23:25:40,913 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9966
+2025-12-17 23:25:40,913 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9966
+2025-12-17 23:25:40,962 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:41,448 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:41,507 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:41,805 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:41,914 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:42,013 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9967)
+2025-12-17 23:25:42,013 - src.data.api_client - INFO - Fetching laps for session=9967, driver=None
+2025-12-17 23:25:42,013 - src.data.api_client - INFO - Fetching positions for session=9967
+2025-12-17 23:25:42,014 - src.data.api_client - INFO - Fetching weather for session=9967
+2025-12-17 23:25:42,014 - src.data.api_client - INFO - Fetching pit stops for session=9967
+2025-12-17 23:25:42,015 - src.data.api_client - INFO - Fetching intervals for session=9967
+2025-12-17 23:25:42,016 - src.data.api_client - INFO - Fetching drivers for session=9967
+2025-12-17 23:25:42,121 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9971)
+2025-12-17 23:25:42,121 - src.data.api_client - INFO - Fetching laps for session=9971, driver=None
+2025-12-17 23:25:42,121 - src.data.api_client - INFO - Fetching positions for session=9971
+2025-12-17 23:25:42,121 - src.data.api_client - INFO - Fetching weather for session=9971
+2025-12-17 23:25:42,122 - src.data.api_client - INFO - Fetching pit stops for session=9971
+2025-12-17 23:25:42,124 - src.data.api_client - INFO - Fetching intervals for session=9971
+2025-12-17 23:25:42,124 - src.data.api_client - INFO - Fetching drivers for session=9971
+2025-12-17 23:25:42,506 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9956)
+2025-12-17 23:25:42,507 - src.data.api_client - INFO - Fetching laps for session=9956, driver=None
+2025-12-17 23:25:42,508 - src.data.api_client - INFO - Fetching positions for session=9956
+2025-12-17 23:25:42,509 - src.data.api_client - INFO - Fetching weather for session=9956
+2025-12-17 23:25:42,509 - src.data.api_client - INFO - Fetching pit stops for session=9956
+2025-12-17 23:25:42,512 - src.data.api_client - INFO - Fetching intervals for session=9956
+2025-12-17 23:25:42,513 - src.data.api_client - INFO - Fetching drivers for session=9956
+2025-12-17 23:25:42,715 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9971
+2025-12-17 23:25:42,852 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9956
+2025-12-17 23:25:42,854 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9956
+2025-12-17 23:25:43,178 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:43,253 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:43,340 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9957)
+2025-12-17 23:25:43,341 - src.data.api_client - INFO - Fetching laps for session=9957, driver=None
+2025-12-17 23:25:43,341 - src.data.api_client - INFO - Fetching positions for session=9957
+2025-12-17 23:25:43,342 - src.data.api_client - INFO - Fetching weather for session=9957
+2025-12-17 23:25:43,342 - src.data.api_client - INFO - Fetching pit stops for session=9957
+2025-12-17 23:25:43,343 - src.data.api_client - INFO - Fetching intervals for session=9957
+2025-12-17 23:25:43,344 - src.data.api_client - INFO - Fetching drivers for session=9957
+2025-12-17 23:25:43,414 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9958)
+2025-12-17 23:25:43,414 - src.data.api_client - INFO - Fetching laps for session=9958, driver=None
+2025-12-17 23:25:43,414 - src.data.api_client - INFO - Fetching positions for session=9958
+2025-12-17 23:25:43,415 - src.data.api_client - INFO - Fetching weather for session=9958
+2025-12-17 23:25:43,415 - src.data.api_client - INFO - Fetching pit stops for session=9958
+2025-12-17 23:25:43,415 - src.data.api_client - INFO - Fetching intervals for session=9958
+2025-12-17 23:25:43,415 - src.data.api_client - INFO - Fetching drivers for session=9958
+2025-12-17 23:25:43,700 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9957
+2025-12-17 23:25:43,751 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9958
+2025-12-17 23:25:44,105 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:44,123 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:44,234 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:44,251 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:44,459 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9959)
+2025-12-17 23:25:44,459 - src.data.api_client - INFO - Fetching laps for session=9959, driver=None
+2025-12-17 23:25:44,459 - src.data.api_client - INFO - Fetching positions for session=9959
+2025-12-17 23:25:44,460 - src.data.api_client - INFO - Fetching weather for session=9959
+2025-12-17 23:25:44,461 - src.data.api_client - INFO - Fetching pit stops for session=9959
+2025-12-17 23:25:44,461 - src.data.api_client - INFO - Fetching intervals for session=9959
+2025-12-17 23:25:44,462 - src.data.api_client - INFO - Fetching drivers for session=9959
+2025-12-17 23:25:44,805 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9959
+2025-12-17 23:25:44,805 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9959
+2025-12-17 23:25:45,063 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9957
+2025-12-17 23:25:46,398 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9963)
+2025-12-17 23:25:46,399 - src.data.api_client - INFO - Fetching laps for session=9963, driver=None
+2025-12-17 23:25:46,399 - src.data.api_client - INFO - Fetching positions for session=9963
+2025-12-17 23:25:46,399 - src.data.api_client - INFO - Fetching weather for session=9963
+2025-12-17 23:25:46,399 - src.data.api_client - INFO - Fetching pit stops for session=9963
+2025-12-17 23:25:46,400 - src.data.api_client - INFO - Fetching intervals for session=9963
+2025-12-17 23:25:46,401 - src.data.api_client - INFO - Fetching drivers for session=9963
+2025-12-17 23:25:46,436 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9948)
+2025-12-17 23:25:46,437 - src.data.api_client - INFO - Fetching laps for session=9948, driver=None
+2025-12-17 23:25:46,437 - src.data.api_client - INFO - Fetching positions for session=9948
+2025-12-17 23:25:46,437 - src.data.api_client - INFO - Fetching weather for session=9948
+2025-12-17 23:25:46,438 - src.data.api_client - INFO - Fetching pit stops for session=9948
+2025-12-17 23:25:46,438 - src.data.api_client - INFO - Fetching intervals for session=9948
+2025-12-17 23:25:46,438 - src.data.api_client - INFO - Fetching drivers for session=9948
+2025-12-17 23:25:46,790 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9963
+2025-12-17 23:25:46,797 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9963
+2025-12-17 23:25:47,585 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9949)
+2025-12-17 23:25:47,586 - src.data.api_client - INFO - Fetching laps for session=9949, driver=None
+2025-12-17 23:25:47,586 - src.data.api_client - INFO - Fetching positions for session=9949
+2025-12-17 23:25:47,587 - src.data.api_client - INFO - Fetching weather for session=9949
+2025-12-17 23:25:47,589 - src.data.api_client - INFO - Fetching pit stops for session=9949
+2025-12-17 23:25:47,590 - src.data.api_client - INFO - Fetching intervals for session=9949
+2025-12-17 23:25:47,592 - src.data.api_client - INFO - Fetching drivers for session=9949
+2025-12-17 23:25:48,168 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9950)
+2025-12-17 23:25:48,169 - src.data.api_client - INFO - Fetching laps for session=9950, driver=None
+2025-12-17 23:25:48,169 - src.data.api_client - INFO - Fetching positions for session=9950
+2025-12-17 23:25:48,170 - src.data.api_client - INFO - Fetching weather for session=9950
+2025-12-17 23:25:48,172 - src.data.api_client - INFO - Fetching pit stops for session=9950
+2025-12-17 23:25:48,173 - src.data.api_client - INFO - Fetching intervals for session=9950
+2025-12-17 23:25:48,175 - src.data.api_client - INFO - Fetching drivers for session=9950
+2025-12-17 23:25:48,518 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9950
+2025-12-17 23:25:48,903 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9951)
+2025-12-17 23:25:48,904 - src.data.api_client - INFO - Fetching laps for session=9951, driver=None
+2025-12-17 23:25:48,904 - src.data.api_client - INFO - Fetching positions for session=9951
+2025-12-17 23:25:48,904 - src.data.api_client - INFO - Fetching weather for session=9951
+2025-12-17 23:25:48,905 - src.data.api_client - INFO - Fetching pit stops for session=9951
+2025-12-17 23:25:48,907 - src.data.api_client - INFO - Fetching intervals for session=9951
+2025-12-17 23:25:48,907 - src.data.api_client - INFO - Fetching drivers for session=9951
+2025-12-17 23:25:49,250 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9951
+2025-12-17 23:25:49,460 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9955)
+2025-12-17 23:25:49,460 - src.data.api_client - INFO - Fetching laps for session=9955, driver=None
+2025-12-17 23:25:49,461 - src.data.api_client - INFO - Fetching positions for session=9955
+2025-12-17 23:25:49,461 - src.data.api_client - INFO - Fetching weather for session=9955
+2025-12-17 23:25:49,462 - src.data.api_client - INFO - Fetching pit stops for session=9955
+2025-12-17 23:25:49,463 - src.data.api_client - INFO - Fetching intervals for session=9955
+2025-12-17 23:25:49,464 - src.data.api_client - INFO - Fetching drivers for session=9955
+2025-12-17 23:25:49,820 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9955
+2025-12-17 23:25:49,824 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9955
+2025-12-17 23:25:49,976 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:50,125 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9940)
+2025-12-17 23:25:50,126 - src.data.api_client - INFO - Fetching laps for session=9940, driver=None
+2025-12-17 23:25:50,126 - src.data.api_client - INFO - Fetching positions for session=9940
+2025-12-17 23:25:50,127 - src.data.api_client - INFO - Fetching weather for session=9940
+2025-12-17 23:25:50,127 - src.data.api_client - INFO - Fetching pit stops for session=9940
+2025-12-17 23:25:50,128 - src.data.api_client - INFO - Fetching intervals for session=9940
+2025-12-17 23:25:50,129 - src.data.api_client - INFO - Fetching drivers for session=9940
+2025-12-17 23:25:50,217 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9941)
+2025-12-17 23:25:50,217 - src.data.api_client - INFO - Fetching laps for session=9941, driver=None
+2025-12-17 23:25:50,218 - src.data.api_client - INFO - Fetching positions for session=9941
+2025-12-17 23:25:50,218 - src.data.api_client - INFO - Fetching weather for session=9941
+2025-12-17 23:25:50,218 - src.data.api_client - INFO - Fetching pit stops for session=9941
+2025-12-17 23:25:50,219 - src.data.api_client - INFO - Fetching intervals for session=9941
+2025-12-17 23:25:50,220 - src.data.api_client - INFO - Fetching drivers for session=9941
+2025-12-17 23:25:50,487 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9940
+2025-12-17 23:25:50,559 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9941
+2025-12-17 23:25:50,561 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9941
+2025-12-17 23:25:50,709 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9941
+2025-12-17 23:25:50,741 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:50,741 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9951
+2025-12-17 23:25:51,360 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:52,488 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9942)
+2025-12-17 23:25:52,488 - src.data.api_client - INFO - Fetching laps for session=9942, driver=None
+2025-12-17 23:25:52,489 - src.data.api_client - INFO - Fetching positions for session=9942
+2025-12-17 23:25:52,489 - src.data.api_client - INFO - Fetching weather for session=9942
+2025-12-17 23:25:52,490 - src.data.api_client - INFO - Fetching pit stops for session=9942
+2025-12-17 23:25:52,490 - src.data.api_client - INFO - Fetching intervals for session=9942
+2025-12-17 23:25:52,490 - src.data.api_client - INFO - Fetching drivers for session=9942
+2025-12-17 23:25:52,857 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9942
+2025-12-17 23:25:53,314 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9943)
+2025-12-17 23:25:53,315 - src.data.api_client - INFO - Fetching laps for session=9943, driver=None
+2025-12-17 23:25:53,315 - src.data.api_client - INFO - Fetching positions for session=9943
+2025-12-17 23:25:53,317 - src.data.api_client - INFO - Fetching weather for session=9943
+2025-12-17 23:25:53,317 - src.data.api_client - INFO - Fetching pit stops for session=9943
+2025-12-17 23:25:53,318 - src.data.api_client - INFO - Fetching intervals for session=9943
+2025-12-17 23:25:53,318 - src.data.api_client - INFO - Fetching drivers for session=9943
+2025-12-17 23:25:53,323 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9947)
+2025-12-17 23:25:53,323 - src.data.api_client - INFO - Fetching laps for session=9947, driver=None
+2025-12-17 23:25:53,323 - src.data.api_client - INFO - Fetching positions for session=9947
+2025-12-17 23:25:53,324 - src.data.api_client - INFO - Fetching weather for session=9947
+2025-12-17 23:25:53,325 - src.data.api_client - INFO - Fetching pit stops for session=9947
+2025-12-17 23:25:53,325 - src.data.api_client - INFO - Fetching intervals for session=9947
+2025-12-17 23:25:53,326 - src.data.api_client - INFO - Fetching drivers for session=9947
+2025-12-17 23:25:53,654 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9943
+2025-12-17 23:25:53,660 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9943
+2025-12-17 23:25:53,668 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9943
+2025-12-17 23:25:53,675 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9947
+2025-12-17 23:25:53,874 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:54,134 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:54,263 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:54,379 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9929)
+2025-12-17 23:25:54,379 - src.data.api_client - INFO - Fetching laps for session=9929, driver=None
+2025-12-17 23:25:54,379 - src.data.api_client - INFO - Fetching positions for session=9929
+2025-12-17 23:25:54,380 - src.data.api_client - INFO - Fetching weather for session=9929
+2025-12-17 23:25:54,380 - src.data.api_client - INFO - Fetching pit stops for session=9929
+2025-12-17 23:25:54,380 - src.data.api_client - INFO - Fetching intervals for session=9929
+2025-12-17 23:25:54,381 - src.data.api_client - INFO - Fetching drivers for session=9929
+2025-12-17 23:25:54,472 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9930)
+2025-12-17 23:25:54,472 - src.data.api_client - INFO - Fetching laps for session=9930, driver=None
+2025-12-17 23:25:54,472 - src.data.api_client - INFO - Fetching positions for session=9930
+2025-12-17 23:25:54,473 - src.data.api_client - INFO - Fetching weather for session=9930
+2025-12-17 23:25:54,474 - src.data.api_client - INFO - Fetching pit stops for session=9930
+2025-12-17 23:25:54,475 - src.data.api_client - INFO - Fetching intervals for session=9930
+2025-12-17 23:25:54,475 - src.data.api_client - INFO - Fetching drivers for session=9930
+2025-12-17 23:25:54,819 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9930
+2025-12-17 23:25:54,839 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9930
+2025-12-17 23:25:54,839 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9930
+2025-12-17 23:25:55,004 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9930
+2025-12-17 23:25:55,083 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:55,337 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:55,375 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:55,376 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:55,376 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9947
+2025-12-17 23:25:55,376 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9943
+2025-12-17 23:25:55,486 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:56,115 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9934)
+2025-12-17 23:25:56,116 - src.data.api_client - INFO - Fetching laps for session=9934, driver=None
+2025-12-17 23:25:56,116 - src.data.api_client - INFO - Fetching positions for session=9934
+2025-12-17 23:25:56,116 - src.data.api_client - INFO - Fetching weather for session=9934
+2025-12-17 23:25:56,117 - src.data.api_client - INFO - Fetching pit stops for session=9934
+2025-12-17 23:25:56,117 - src.data.api_client - INFO - Fetching intervals for session=9934
+2025-12-17 23:25:56,117 - src.data.api_client - INFO - Fetching drivers for session=9934
+2025-12-17 23:25:57,163 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9935)
+2025-12-17 23:25:57,164 - src.data.api_client - INFO - Fetching laps for session=9935, driver=None
+2025-12-17 23:25:57,164 - src.data.api_client - INFO - Fetching positions for session=9935
+2025-12-17 23:25:57,164 - src.data.api_client - INFO - Fetching weather for session=9935
+2025-12-17 23:25:57,167 - src.data.api_client - INFO - Fetching pit stops for session=9935
+2025-12-17 23:25:57,168 - src.data.api_client - INFO - Fetching intervals for session=9935
+2025-12-17 23:25:57,169 - src.data.api_client - INFO - Fetching drivers for session=9935
+2025-12-17 23:25:58,291 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9939)
+2025-12-17 23:25:58,292 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9921)
+2025-12-17 23:25:58,292 - src.data.api_client - INFO - Fetching laps for session=9939, driver=None
+2025-12-17 23:25:58,293 - src.data.api_client - INFO - Fetching positions for session=9939
+2025-12-17 23:25:58,294 - src.data.api_client - INFO - Fetching laps for session=9921, driver=None
+2025-12-17 23:25:58,294 - src.data.api_client - INFO - Fetching positions for session=9921
+2025-12-17 23:25:58,296 - src.data.api_client - INFO - Fetching weather for session=9939
+2025-12-17 23:25:58,297 - src.data.api_client - INFO - Fetching weather for session=9921
+2025-12-17 23:25:58,299 - src.data.api_client - INFO - Fetching pit stops for session=9921
+2025-12-17 23:25:58,300 - src.data.api_client - INFO - Fetching pit stops for session=9939
+2025-12-17 23:25:58,301 - src.data.api_client - INFO - Fetching intervals for session=9939
+2025-12-17 23:25:58,302 - src.data.api_client - INFO - Fetching intervals for session=9921
+2025-12-17 23:25:58,302 - src.data.api_client - INFO - Fetching drivers for session=9921
+2025-12-17 23:25:58,302 - src.data.api_client - INFO - Fetching drivers for session=9939
+2025-12-17 23:25:58,516 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9922)
+2025-12-17 23:25:58,517 - src.data.api_client - INFO - Fetching laps for session=9922, driver=None
+2025-12-17 23:25:58,517 - src.data.api_client - INFO - Fetching positions for session=9922
+2025-12-17 23:25:58,517 - src.data.api_client - INFO - Fetching weather for session=9922
+2025-12-17 23:25:58,518 - src.data.api_client - INFO - Fetching pit stops for session=9922
+2025-12-17 23:25:58,519 - src.data.api_client - INFO - Fetching intervals for session=9922
+2025-12-17 23:25:58,520 - src.data.api_client - INFO - Fetching drivers for session=9922
+2025-12-17 23:25:59,213 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:59,213 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9922
+2025-12-17 23:25:59,245 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:59,251 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:25:59,526 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:00,053 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:00,569 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:00,733 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:00,778 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9923)
+2025-12-17 23:26:00,778 - src.data.api_client - INFO - Fetching laps for session=9923, driver=None
+2025-12-17 23:26:00,779 - src.data.api_client - INFO - Fetching positions for session=9923
+2025-12-17 23:26:00,779 - src.data.api_client - INFO - Fetching weather for session=9923
+2025-12-17 23:26:00,779 - src.data.api_client - INFO - Fetching pit stops for session=9923
+2025-12-17 23:26:00,779 - src.data.api_client - INFO - Fetching intervals for session=9923
+2025-12-17 23:26:00,780 - src.data.api_client - INFO - Fetching drivers for session=9923
+2025-12-17 23:26:00,972 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9924)
+2025-12-17 23:26:00,972 - src.data.api_client - INFO - Fetching laps for session=9924, driver=None
+2025-12-17 23:26:00,972 - src.data.api_client - INFO - Fetching positions for session=9924
+2025-12-17 23:26:00,972 - src.data.api_client - INFO - Fetching weather for session=9924
+2025-12-17 23:26:00,973 - src.data.api_client - INFO - Fetching pit stops for session=9924
+2025-12-17 23:26:00,973 - src.data.api_client - INFO - Fetching intervals for session=9924
+2025-12-17 23:26:00,974 - src.data.api_client - INFO - Fetching drivers for session=9924
+2025-12-17 23:26:01,026 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9928)
+2025-12-17 23:26:01,026 - src.data.api_client - INFO - Fetching laps for session=9928, driver=None
+2025-12-17 23:26:01,026 - src.data.api_client - INFO - Fetching positions for session=9928
+2025-12-17 23:26:01,026 - src.data.api_client - INFO - Fetching weather for session=9928
+2025-12-17 23:26:01,026 - src.data.api_client - INFO - Fetching pit stops for session=9928
+2025-12-17 23:26:01,027 - src.data.api_client - INFO - Fetching intervals for session=9928
+2025-12-17 23:26:01,027 - src.data.api_client - INFO - Fetching drivers for session=9928
+2025-12-17 23:26:01,853 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:01,854 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9928
+2025-12-17 23:26:01,858 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:01,858 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9928
+2025-12-17 23:26:01,862 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:01,862 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9928
+2025-12-17 23:26:01,867 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:01,867 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9928
+2025-12-17 23:26:01,884 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:01,943 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:02,003 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:02,004 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9913)
+2025-12-17 23:26:02,004 - src.data.api_client - INFO - Fetching laps for session=9913, driver=None
+2025-12-17 23:26:02,004 - src.data.api_client - INFO - Fetching positions for session=9913
+2025-12-17 23:26:02,004 - src.data.api_client - INFO - Fetching weather for session=9913
+2025-12-17 23:26:02,005 - src.data.api_client - INFO - Fetching pit stops for session=9913
+2025-12-17 23:26:02,005 - src.data.api_client - INFO - Fetching intervals for session=9913
+2025-12-17 23:26:02,005 - src.data.api_client - INFO - Fetching drivers for session=9913
+2025-12-17 23:26:02,389 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9914)
+2025-12-17 23:26:02,390 - src.data.api_client - INFO - Fetching laps for session=9914, driver=None
+2025-12-17 23:26:02,390 - src.data.api_client - INFO - Fetching positions for session=9914
+2025-12-17 23:26:02,391 - src.data.api_client - INFO - Fetching weather for session=9914
+2025-12-17 23:26:02,392 - src.data.api_client - INFO - Fetching pit stops for session=9914
+2025-12-17 23:26:02,395 - src.data.api_client - INFO - Fetching intervals for session=9914
+2025-12-17 23:26:02,395 - src.data.api_client - INFO - Fetching drivers for session=9914
+2025-12-17 23:26:02,435 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9915)
+2025-12-17 23:26:02,436 - src.data.api_client - INFO - Fetching laps for session=9915, driver=None
+2025-12-17 23:26:02,436 - src.data.api_client - INFO - Fetching positions for session=9915
+2025-12-17 23:26:02,437 - src.data.api_client - INFO - Fetching weather for session=9915
+2025-12-17 23:26:02,437 - src.data.api_client - INFO - Fetching pit stops for session=9915
+2025-12-17 23:26:02,438 - src.data.api_client - INFO - Fetching intervals for session=9915
+2025-12-17 23:26:02,438 - src.data.api_client - INFO - Fetching drivers for session=9915
+2025-12-17 23:26:02,788 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9915
+2025-12-17 23:26:03,752 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9916)
+2025-12-17 23:26:03,753 - src.data.api_client - INFO - Fetching laps for session=9916, driver=None
+2025-12-17 23:26:03,753 - src.data.api_client - INFO - Fetching positions for session=9916
+2025-12-17 23:26:03,753 - src.data.api_client - INFO - Fetching weather for session=9916
+2025-12-17 23:26:03,754 - src.data.api_client - INFO - Fetching pit stops for session=9916
+2025-12-17 23:26:03,754 - src.data.api_client - INFO - Fetching intervals for session=9916
+2025-12-17 23:26:03,755 - src.data.api_client - INFO - Fetching drivers for session=9916
+2025-12-17 23:26:03,961 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9920)
+2025-12-17 23:26:03,962 - src.data.api_client - INFO - Fetching laps for session=9920, driver=None
+2025-12-17 23:26:03,962 - src.data.api_client - INFO - Fetching positions for session=9920
+2025-12-17 23:26:03,964 - src.data.api_client - INFO - Fetching weather for session=9920
+2025-12-17 23:26:03,964 - src.data.api_client - INFO - Fetching pit stops for session=9920
+2025-12-17 23:26:03,965 - src.data.api_client - INFO - Fetching intervals for session=9920
+2025-12-17 23:26:03,966 - src.data.api_client - INFO - Fetching drivers for session=9920
+2025-12-17 23:26:04,318 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9920
+2025-12-17 23:26:04,409 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9905)
+2025-12-17 23:26:04,409 - src.data.api_client - INFO - Fetching laps for session=9905, driver=None
+2025-12-17 23:26:04,409 - src.data.api_client - INFO - Fetching positions for session=9905
+2025-12-17 23:26:04,409 - src.data.api_client - INFO - Fetching weather for session=9905
+2025-12-17 23:26:04,410 - src.data.api_client - INFO - Fetching pit stops for session=9905
+2025-12-17 23:26:04,410 - src.data.api_client - INFO - Fetching intervals for session=9905
+2025-12-17 23:26:04,411 - src.data.api_client - INFO - Fetching drivers for session=9905
+2025-12-17 23:26:04,763 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9905
+2025-12-17 23:26:04,764 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9905
+2025-12-17 23:26:04,770 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9905
+2025-12-17 23:26:04,957 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:05,108 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:05,318 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9906)
+2025-12-17 23:26:05,318 - src.data.api_client - INFO - Fetching laps for session=9906, driver=None
+2025-12-17 23:26:05,318 - src.data.api_client - INFO - Fetching positions for session=9906
+2025-12-17 23:26:05,318 - src.data.api_client - INFO - Fetching weather for session=9906
+2025-12-17 23:26:05,319 - src.data.api_client - INFO - Fetching pit stops for session=9906
+2025-12-17 23:26:05,320 - src.data.api_client - INFO - Fetching intervals for session=9906
+2025-12-17 23:26:05,321 - src.data.api_client - INFO - Fetching drivers for session=9906
+2025-12-17 23:26:05,678 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9906
+2025-12-17 23:26:06,112 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9905
+2025-12-17 23:26:07,258 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:07,341 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:07,489 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9907)
+2025-12-17 23:26:07,489 - src.data.api_client - INFO - Fetching laps for session=9907, driver=None
+2025-12-17 23:26:07,489 - src.data.api_client - INFO - Fetching positions for session=9907
+2025-12-17 23:26:07,489 - src.data.api_client - INFO - Fetching weather for session=9907
+2025-12-17 23:26:07,490 - src.data.api_client - INFO - Fetching pit stops for session=9907
+2025-12-17 23:26:07,490 - src.data.api_client - INFO - Fetching intervals for session=9907
+2025-12-17 23:26:07,491 - src.data.api_client - INFO - Fetching drivers for session=9907
+2025-12-17 23:26:07,547 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9908)
+2025-12-17 23:26:07,548 - src.data.api_client - INFO - Fetching laps for session=9908, driver=None
+2025-12-17 23:26:07,548 - src.data.api_client - INFO - Fetching positions for session=9908
+2025-12-17 23:26:07,548 - src.data.api_client - INFO - Fetching weather for session=9908
+2025-12-17 23:26:07,548 - src.data.api_client - INFO - Fetching pit stops for session=9908
+2025-12-17 23:26:07,549 - src.data.api_client - INFO - Fetching intervals for session=9908
+2025-12-17 23:26:07,549 - src.data.api_client - INFO - Fetching drivers for session=9908
+2025-12-17 23:26:07,839 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9907
+2025-12-17 23:26:07,891 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9908
+2025-12-17 23:26:07,893 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9908
+2025-12-17 23:26:07,903 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9908
+2025-12-17 23:26:07,961 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9907
+2025-12-17 23:26:08,047 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9908
+2025-12-17 23:26:08,097 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:08,201 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9912)
+2025-12-17 23:26:08,201 - src.data.api_client - INFO - Fetching laps for session=9912, driver=None
+2025-12-17 23:26:08,201 - src.data.api_client - INFO - Fetching positions for session=9912
+2025-12-17 23:26:08,201 - src.data.api_client - INFO - Fetching weather for session=9912
+2025-12-17 23:26:08,202 - src.data.api_client - INFO - Fetching pit stops for session=9912
+2025-12-17 23:26:08,203 - src.data.api_client - INFO - Fetching intervals for session=9912
+2025-12-17 23:26:08,203 - src.data.api_client - INFO - Fetching drivers for session=9912
+2025-12-17 23:26:08,466 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9905
+2025-12-17 23:26:08,466 - src.data.data_collector - WARNING -   ✗ pit_stops failed for session 9905: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9905
+2025-12-17 23:26:08,467 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9897)
+2025-12-17 23:26:08,467 - src.data.api_client - INFO - Fetching laps for session=9897, driver=None
+2025-12-17 23:26:08,468 - src.data.api_client - INFO - Fetching positions for session=9897
+2025-12-17 23:26:08,468 - src.data.api_client - INFO - Fetching weather for session=9897
+2025-12-17 23:26:08,469 - src.data.api_client - INFO - Fetching pit stops for session=9897
+2025-12-17 23:26:08,470 - src.data.api_client - INFO - Fetching intervals for session=9897
+2025-12-17 23:26:08,471 - src.data.api_client - INFO - Fetching drivers for session=9897
+2025-12-17 23:26:08,541 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9912
+2025-12-17 23:26:08,554 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9912
+2025-12-17 23:26:08,810 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9897
+2025-12-17 23:26:08,817 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9897
+2025-12-17 23:26:08,819 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9897
+2025-12-17 23:26:08,845 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:09,180 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9907
+2025-12-17 23:26:09,235 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9908
+2025-12-17 23:26:09,896 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9912
+2025-12-17 23:26:10,165 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9897
+2025-12-17 23:26:10,175 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9897
+2025-12-17 23:26:11,763 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9898)
+2025-12-17 23:26:11,764 - src.data.api_client - INFO - Fetching laps for session=9898, driver=None
+2025-12-17 23:26:11,764 - src.data.api_client - INFO - Fetching positions for session=9898
+2025-12-17 23:26:11,765 - src.data.api_client - INFO - Fetching weather for session=9898
+2025-12-17 23:26:11,765 - src.data.api_client - INFO - Fetching pit stops for session=9898
+2025-12-17 23:26:11,766 - src.data.api_client - INFO - Fetching intervals for session=9898
+2025-12-17 23:26:11,767 - src.data.api_client - INFO - Fetching drivers for session=9898
+2025-12-17 23:26:11,808 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9899)
+2025-12-17 23:26:11,808 - src.data.api_client - INFO - Fetching laps for session=9899, driver=None
+2025-12-17 23:26:11,809 - src.data.api_client - INFO - Fetching positions for session=9899
+2025-12-17 23:26:11,809 - src.data.api_client - INFO - Fetching weather for session=9899
+2025-12-17 23:26:11,809 - src.data.api_client - INFO - Fetching pit stops for session=9899
+2025-12-17 23:26:11,810 - src.data.api_client - INFO - Fetching intervals for session=9899
+2025-12-17 23:26:11,811 - src.data.api_client - INFO - Fetching drivers for session=9899
+2025-12-17 23:26:12,160 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9899
+2025-12-17 23:26:12,393 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9912
+2025-12-17 23:26:12,393 - src.data.data_collector - WARNING -   ✗ weather failed for session 9912: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9912
+2025-12-17 23:26:12,514 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9897
+2025-12-17 23:26:12,518 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9897
+2025-12-17 23:26:12,518 - src.data.data_collector - WARNING -   ✗ laps failed for session 9897: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9897
+2025-12-17 23:26:12,519 - src.data.data_collector - WARNING -   ✗ weather failed for session 9897: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9897
+2025-12-17 23:26:12,520 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9900)
+2025-12-17 23:26:12,520 - src.data.api_client - INFO - Fetching laps for session=9900, driver=None
+2025-12-17 23:26:12,520 - src.data.api_client - INFO - Fetching positions for session=9900
+2025-12-17 23:26:12,522 - src.data.api_client - INFO - Fetching weather for session=9900
+2025-12-17 23:26:12,523 - src.data.api_client - INFO - Fetching pit stops for session=9900
+2025-12-17 23:26:12,523 - src.data.api_client - INFO - Fetching intervals for session=9900
+2025-12-17 23:26:12,524 - src.data.api_client - INFO - Fetching drivers for session=9900
+2025-12-17 23:26:12,864 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9900
+2025-12-17 23:26:12,874 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9900
+2025-12-17 23:26:12,875 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9900
+2025-12-17 23:26:12,895 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:12,941 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9904)
+2025-12-17 23:26:12,941 - src.data.api_client - INFO - Fetching laps for session=9904, driver=None
+2025-12-17 23:26:12,941 - src.data.api_client - INFO - Fetching positions for session=9904
+2025-12-17 23:26:12,942 - src.data.api_client - INFO - Fetching weather for session=9904
+2025-12-17 23:26:12,942 - src.data.api_client - INFO - Fetching pit stops for session=9904
+2025-12-17 23:26:12,943 - src.data.api_client - INFO - Fetching intervals for session=9904
+2025-12-17 23:26:12,944 - src.data.api_client - INFO - Fetching drivers for session=9904
+2025-12-17 23:26:13,285 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9904
+2025-12-17 23:26:13,423 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:13,452 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9889)
+2025-12-17 23:26:13,452 - src.data.api_client - INFO - Fetching laps for session=9889, driver=None
+2025-12-17 23:26:13,453 - src.data.api_client - INFO - Fetching positions for session=9889
+2025-12-17 23:26:13,454 - src.data.api_client - INFO - Fetching weather for session=9889
+2025-12-17 23:26:13,454 - src.data.api_client - INFO - Fetching pit stops for session=9889
+2025-12-17 23:26:13,455 - src.data.api_client - INFO - Fetching intervals for session=9889
+2025-12-17 23:26:13,455 - src.data.api_client - INFO - Fetching drivers for session=9889
+2025-12-17 23:26:13,762 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9890)
+2025-12-17 23:26:13,762 - src.data.api_client - INFO - Fetching laps for session=9890, driver=None
+2025-12-17 23:26:13,762 - src.data.api_client - INFO - Fetching positions for session=9890
+2025-12-17 23:26:13,762 - src.data.api_client - INFO - Fetching weather for session=9890
+2025-12-17 23:26:13,764 - src.data.api_client - INFO - Fetching pit stops for session=9890
+2025-12-17 23:26:13,765 - src.data.api_client - INFO - Fetching intervals for session=9890
+2025-12-17 23:26:13,765 - src.data.api_client - INFO - Fetching drivers for session=9890
+2025-12-17 23:26:13,791 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9889
+2025-12-17 23:26:13,793 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9889
+2025-12-17 23:26:14,110 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9890
+2025-12-17 23:26:14,114 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9890
+2025-12-17 23:26:14,115 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9890
+2025-12-17 23:26:14,216 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9900
+2025-12-17 23:26:14,255 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9890
+2025-12-17 23:26:14,257 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:14,731 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:15,140 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9889
+2025-12-17 23:26:15,463 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9890
+2025-12-17 23:26:17,728 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9891)
+2025-12-17 23:26:17,729 - src.data.api_client - INFO - Fetching laps for session=9891, driver=None
+2025-12-17 23:26:17,729 - src.data.api_client - INFO - Fetching positions for session=9891
+2025-12-17 23:26:17,729 - src.data.api_client - INFO - Fetching weather for session=9891
+2025-12-17 23:26:17,731 - src.data.api_client - INFO - Fetching pit stops for session=9891
+2025-12-17 23:26:17,731 - src.data.api_client - INFO - Fetching intervals for session=9891
+2025-12-17 23:26:17,732 - src.data.api_client - INFO - Fetching drivers for session=9891
+2025-12-17 23:26:17,938 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9892)
+2025-12-17 23:26:17,939 - src.data.api_client - INFO - Fetching laps for session=9892, driver=None
+2025-12-17 23:26:17,939 - src.data.api_client - INFO - Fetching positions for session=9892
+2025-12-17 23:26:17,939 - src.data.api_client - INFO - Fetching weather for session=9892
+2025-12-17 23:26:17,940 - src.data.api_client - INFO - Fetching pit stops for session=9892
+2025-12-17 23:26:17,940 - src.data.api_client - INFO - Fetching intervals for session=9892
+2025-12-17 23:26:17,940 - src.data.api_client - INFO - Fetching drivers for session=9892
+2025-12-17 23:26:18,885 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:19,058 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9896)
+2025-12-17 23:26:19,058 - src.data.api_client - INFO - Fetching laps for session=9896, driver=None
+2025-12-17 23:26:19,059 - src.data.api_client - INFO - Fetching positions for session=9896
+2025-12-17 23:26:19,059 - src.data.api_client - INFO - Fetching weather for session=9896
+2025-12-17 23:26:19,060 - src.data.api_client - INFO - Fetching pit stops for session=9896
+2025-12-17 23:26:19,060 - src.data.api_client - INFO - Fetching intervals for session=9896
+2025-12-17 23:26:19,061 - src.data.api_client - INFO - Fetching drivers for session=9896
+2025-12-17 23:26:19,405 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9878)
+2025-12-17 23:26:19,405 - src.data.api_client - INFO - Fetching laps for session=9878, driver=None
+2025-12-17 23:26:19,405 - src.data.api_client - INFO - Fetching positions for session=9878
+2025-12-17 23:26:19,406 - src.data.api_client - INFO - Fetching weather for session=9878
+2025-12-17 23:26:19,407 - src.data.api_client - INFO - Fetching pit stops for session=9878
+2025-12-17 23:26:19,407 - src.data.api_client - INFO - Fetching intervals for session=9878
+2025-12-17 23:26:19,408 - src.data.api_client - INFO - Fetching drivers for session=9878
+2025-12-17 23:26:19,420 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9879)
+2025-12-17 23:26:19,420 - src.data.api_client - INFO - Fetching laps for session=9879, driver=None
+2025-12-17 23:26:19,421 - src.data.api_client - INFO - Fetching positions for session=9879
+2025-12-17 23:26:19,421 - src.data.api_client - INFO - Fetching weather for session=9879
+2025-12-17 23:26:19,422 - src.data.api_client - INFO - Fetching pit stops for session=9879
+2025-12-17 23:26:19,422 - src.data.api_client - INFO - Fetching intervals for session=9879
+2025-12-17 23:26:19,423 - src.data.api_client - INFO - Fetching drivers for session=9879
+2025-12-17 23:26:19,532 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9883)
+2025-12-17 23:26:19,532 - src.data.api_client - INFO - Fetching laps for session=9883, driver=None
+2025-12-17 23:26:19,532 - src.data.api_client - INFO - Fetching positions for session=9883
+2025-12-17 23:26:19,533 - src.data.api_client - INFO - Fetching weather for session=9883
+2025-12-17 23:26:19,533 - src.data.api_client - INFO - Fetching pit stops for session=9883
+2025-12-17 23:26:19,534 - src.data.api_client - INFO - Fetching intervals for session=9883
+2025-12-17 23:26:19,534 - src.data.api_client - INFO - Fetching drivers for session=9883
+2025-12-17 23:26:19,958 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9879
+2025-12-17 23:26:19,972 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9879
+2025-12-17 23:26:20,064 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,225 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,225 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9883
+2025-12-17 23:26:20,230 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,230 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9879
+2025-12-17 23:26:20,234 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,235 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9883
+2025-12-17 23:26:20,236 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,236 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9883
+2025-12-17 23:26:20,615 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,828 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:20,901 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:21,109 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9884)
+2025-12-17 23:26:21,109 - src.data.api_client - INFO - Fetching laps for session=9884, driver=None
+2025-12-17 23:26:21,109 - src.data.api_client - INFO - Fetching positions for session=9884
+2025-12-17 23:26:21,109 - src.data.api_client - INFO - Fetching weather for session=9884
+2025-12-17 23:26:21,110 - src.data.api_client - INFO - Fetching pit stops for session=9884
+2025-12-17 23:26:21,110 - src.data.api_client - INFO - Fetching intervals for session=9884
+2025-12-17 23:26:21,111 - src.data.api_client - INFO - Fetching drivers for session=9884
+2025-12-17 23:26:21,296 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9879
+2025-12-17 23:26:21,311 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9879
+2025-12-17 23:26:21,451 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9884
+2025-12-17 23:26:21,464 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9884
+2025-12-17 23:26:21,603 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9879
+2025-12-17 23:26:21,775 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:21,987 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9888)
+2025-12-17 23:26:21,988 - src.data.api_client - INFO - Fetching laps for session=9888, driver=None
+2025-12-17 23:26:21,988 - src.data.api_client - INFO - Fetching positions for session=9888
+2025-12-17 23:26:21,989 - src.data.api_client - INFO - Fetching weather for session=9888
+2025-12-17 23:26:21,990 - src.data.api_client - INFO - Fetching pit stops for session=9888
+2025-12-17 23:26:21,990 - src.data.api_client - INFO - Fetching intervals for session=9888
+2025-12-17 23:26:21,991 - src.data.api_client - INFO - Fetching drivers for session=9888
+2025-12-17 23:26:22,330 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9888
+2025-12-17 23:26:22,834 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:22,855 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:22,998 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9870)
+2025-12-17 23:26:22,998 - src.data.api_client - INFO - Fetching laps for session=9870, driver=None
+2025-12-17 23:26:22,998 - src.data.api_client - INFO - Fetching positions for session=9870
+2025-12-17 23:26:22,999 - src.data.api_client - INFO - Fetching weather for session=9870
+2025-12-17 23:26:22,999 - src.data.api_client - INFO - Fetching pit stops for session=9870
+2025-12-17 23:26:23,000 - src.data.api_client - INFO - Fetching intervals for session=9870
+2025-12-17 23:26:23,000 - src.data.api_client - INFO - Fetching drivers for session=9870
+2025-12-17 23:26:23,063 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9871)
+2025-12-17 23:26:23,063 - src.data.api_client - INFO - Fetching laps for session=9871, driver=None
+2025-12-17 23:26:23,063 - src.data.api_client - INFO - Fetching positions for session=9871
+2025-12-17 23:26:23,064 - src.data.api_client - INFO - Fetching weather for session=9871
+2025-12-17 23:26:23,064 - src.data.api_client - INFO - Fetching pit stops for session=9871
+2025-12-17 23:26:23,064 - src.data.api_client - INFO - Fetching intervals for session=9871
+2025-12-17 23:26:23,065 - src.data.api_client - INFO - Fetching drivers for session=9871
+2025-12-17 23:26:23,572 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9871
+2025-12-17 23:26:23,580 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9871
+2025-12-17 23:26:23,817 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9879
+2025-12-17 23:26:23,817 - src.data.data_collector - WARNING -   ✗ positions failed for session 9879: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9879
+2025-12-17 23:26:23,834 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:23,834 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9879
+2025-12-17 23:26:23,843 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:23,843 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9888
+2025-12-17 23:26:23,947 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:23,947 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9879
+2025-12-17 23:26:23,948 - src.data.data_collector - WARNING -   ✗ weather failed for session 9879: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9879
+2025-12-17 23:26:23,948 - src.data.data_collector - WARNING -   ✗ drivers failed for session 9879: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9879
+2025-12-17 23:26:23,949 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9872)
+2025-12-17 23:26:23,949 - src.data.api_client - INFO - Fetching laps for session=9872, driver=None
+2025-12-17 23:26:23,949 - src.data.api_client - INFO - Fetching positions for session=9872
+2025-12-17 23:26:23,950 - src.data.api_client - INFO - Fetching weather for session=9872
+2025-12-17 23:26:23,951 - src.data.api_client - INFO - Fetching pit stops for session=9872
+2025-12-17 23:26:23,951 - src.data.api_client - INFO - Fetching intervals for session=9872
+2025-12-17 23:26:23,953 - src.data.api_client - INFO - Fetching drivers for session=9872
+2025-12-17 23:26:24,293 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9872
+2025-12-17 23:26:24,297 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9872
+2025-12-17 23:26:24,677 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9873)
+2025-12-17 23:26:24,678 - src.data.api_client - INFO - Fetching laps for session=9873, driver=None
+2025-12-17 23:26:24,678 - src.data.api_client - INFO - Fetching positions for session=9873
+2025-12-17 23:26:24,678 - src.data.api_client - INFO - Fetching weather for session=9873
+2025-12-17 23:26:24,679 - src.data.api_client - INFO - Fetching pit stops for session=9873
+2025-12-17 23:26:24,680 - src.data.api_client - INFO - Fetching intervals for session=9873
+2025-12-17 23:26:24,682 - src.data.api_client - INFO - Fetching drivers for session=9873
+2025-12-17 23:26:25,191 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9877)
+2025-12-17 23:26:25,192 - src.data.api_client - INFO - Fetching laps for session=9877, driver=None
+2025-12-17 23:26:25,192 - src.data.api_client - INFO - Fetching positions for session=9877
+2025-12-17 23:26:25,193 - src.data.api_client - INFO - Fetching weather for session=9877
+2025-12-17 23:26:25,194 - src.data.api_client - INFO - Fetching pit stops for session=9877
+2025-12-17 23:26:25,196 - src.data.api_client - INFO - Fetching intervals for session=9877
+2025-12-17 23:26:25,197 - src.data.api_client - INFO - Fetching drivers for session=9877
+2025-12-17 23:26:25,532 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9877
+2025-12-17 23:26:25,548 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9877
+2025-12-17 23:26:25,683 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:25,889 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9859)
+2025-12-17 23:26:25,890 - src.data.api_client - INFO - Fetching laps for session=9859, driver=None
+2025-12-17 23:26:25,890 - src.data.api_client - INFO - Fetching positions for session=9859
+2025-12-17 23:26:25,891 - src.data.api_client - INFO - Fetching weather for session=9859
+2025-12-17 23:26:25,892 - src.data.api_client - INFO - Fetching pit stops for session=9859
+2025-12-17 23:26:25,893 - src.data.api_client - INFO - Fetching intervals for session=9859
+2025-12-17 23:26:25,895 - src.data.api_client - INFO - Fetching drivers for session=9859
+2025-12-17 23:26:26,157 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9860)
+2025-12-17 23:26:26,157 - src.data.api_client - INFO - Fetching laps for session=9860, driver=None
+2025-12-17 23:26:26,157 - src.data.api_client - INFO - Fetching positions for session=9860
+2025-12-17 23:26:26,158 - src.data.api_client - INFO - Fetching weather for session=9860
+2025-12-17 23:26:26,158 - src.data.api_client - INFO - Fetching pit stops for session=9860
+2025-12-17 23:26:26,159 - src.data.api_client - INFO - Fetching intervals for session=9860
+2025-12-17 23:26:26,159 - src.data.api_client - INFO - Fetching drivers for session=9860
+2025-12-17 23:26:26,499 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9860
+2025-12-17 23:26:26,500 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9860
+2025-12-17 23:26:26,512 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9860
+2025-12-17 23:26:26,652 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9860
+2025-12-17 23:26:26,889 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9877
+2025-12-17 23:26:26,907 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9877
+2025-12-17 23:26:26,922 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:27,145 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:27,790 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9864)
+2025-12-17 23:26:27,790 - src.data.api_client - INFO - Fetching laps for session=9864, driver=None
+2025-12-17 23:26:27,791 - src.data.api_client - INFO - Fetching positions for session=9864
+2025-12-17 23:26:27,791 - src.data.api_client - INFO - Fetching weather for session=9864
+2025-12-17 23:26:27,791 - src.data.api_client - INFO - Fetching pit stops for session=9864
+2025-12-17 23:26:27,792 - src.data.api_client - INFO - Fetching intervals for session=9864
+2025-12-17 23:26:27,793 - src.data.api_client - INFO - Fetching drivers for session=9864
+2025-12-17 23:26:27,847 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9860
+2025-12-17 23:26:27,866 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9860
+2025-12-17 23:26:27,917 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9865)
+2025-12-17 23:26:27,917 - src.data.api_client - INFO - Fetching laps for session=9865, driver=None
+2025-12-17 23:26:27,918 - src.data.api_client - INFO - Fetching positions for session=9865
+2025-12-17 23:26:27,918 - src.data.api_client - INFO - Fetching weather for session=9865
+2025-12-17 23:26:27,919 - src.data.api_client - INFO - Fetching pit stops for session=9865
+2025-12-17 23:26:27,919 - src.data.api_client - INFO - Fetching intervals for session=9865
+2025-12-17 23:26:27,919 - src.data.api_client - INFO - Fetching drivers for session=9865
+2025-12-17 23:26:28,269 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9865
+2025-12-17 23:26:28,281 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9865
+2025-12-17 23:26:28,282 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9865
+2025-12-17 23:26:28,416 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9865
+2025-12-17 23:26:28,780 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:29,249 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9877
+2025-12-17 23:26:29,250 - src.data.data_collector - WARNING -   ✗ positions failed for session 9877: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9877
+2025-12-17 23:26:29,252 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9877
+2025-12-17 23:26:29,253 - src.data.data_collector - WARNING -   ✗ intervals failed for session 9877: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9877
+2025-12-17 23:26:29,253 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9869)
+2025-12-17 23:26:29,254 - src.data.api_client - INFO - Fetching laps for session=9869, driver=None
+2025-12-17 23:26:29,254 - src.data.api_client - INFO - Fetching positions for session=9869
+2025-12-17 23:26:29,255 - src.data.api_client - INFO - Fetching weather for session=9869
+2025-12-17 23:26:29,255 - src.data.api_client - INFO - Fetching pit stops for session=9869
+2025-12-17 23:26:29,256 - src.data.api_client - INFO - Fetching intervals for session=9869
+2025-12-17 23:26:29,257 - src.data.api_client - INFO - Fetching drivers for session=9869
+2025-12-17 23:26:29,607 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9869
+2025-12-17 23:26:29,617 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9865
+2025-12-17 23:26:29,638 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9865
+2025-12-17 23:26:30,168 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9851)
+2025-12-17 23:26:30,168 - src.data.api_client - INFO - Fetching laps for session=9851, driver=None
+2025-12-17 23:26:30,168 - src.data.api_client - INFO - Fetching positions for session=9851
+2025-12-17 23:26:30,169 - src.data.api_client - INFO - Fetching weather for session=9851
+2025-12-17 23:26:30,170 - src.data.api_client - INFO - Fetching pit stops for session=9851
+2025-12-17 23:26:30,170 - src.data.api_client - INFO - Fetching intervals for session=9851
+2025-12-17 23:26:30,171 - src.data.api_client - INFO - Fetching drivers for session=9851
+2025-12-17 23:26:30,200 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9860
+2025-12-17 23:26:30,201 - src.data.data_collector - WARNING -   ✗ laps failed for session 9860: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9860
+2025-12-17 23:26:30,222 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9860
+2025-12-17 23:26:30,222 - src.data.data_collector - WARNING -   ✗ pit_stops failed for session 9860: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9860
+2025-12-17 23:26:30,223 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9852)
+2025-12-17 23:26:30,223 - src.data.api_client - INFO - Fetching laps for session=9852, driver=None
+2025-12-17 23:26:30,223 - src.data.api_client - INFO - Fetching positions for session=9852
+2025-12-17 23:26:30,224 - src.data.api_client - INFO - Fetching weather for session=9852
+2025-12-17 23:26:30,225 - src.data.api_client - INFO - Fetching pit stops for session=9852
+2025-12-17 23:26:30,225 - src.data.api_client - INFO - Fetching intervals for session=9852
+2025-12-17 23:26:30,226 - src.data.api_client - INFO - Fetching drivers for session=9852
+2025-12-17 23:26:30,511 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9851
+2025-12-17 23:26:30,521 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9851
+2025-12-17 23:26:30,568 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9852
+2025-12-17 23:26:30,574 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9852
+2025-12-17 23:26:30,728 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9852
+2025-12-17 23:26:30,967 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:30,967 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9869
+2025-12-17 23:26:31,002 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:31,226 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:31,993 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9865
+2025-12-17 23:26:31,993 - src.data.data_collector - WARNING -   ✗ laps failed for session 9865: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9865
+2025-12-17 23:26:32,189 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9853)
+2025-12-17 23:26:32,189 - src.data.api_client - INFO - Fetching laps for session=9853, driver=None
+2025-12-17 23:26:32,189 - src.data.api_client - INFO - Fetching positions for session=9853
+2025-12-17 23:26:32,189 - src.data.api_client - INFO - Fetching weather for session=9853
+2025-12-17 23:26:32,190 - src.data.api_client - INFO - Fetching pit stops for session=9853
+2025-12-17 23:26:32,190 - src.data.api_client - INFO - Fetching intervals for session=9853
+2025-12-17 23:26:32,190 - src.data.api_client - INFO - Fetching drivers for session=9853
+2025-12-17 23:26:32,545 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9853
+2025-12-17 23:26:33,055 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9854)
+2025-12-17 23:26:33,056 - src.data.api_client - INFO - Fetching laps for session=9854, driver=None
+2025-12-17 23:26:33,056 - src.data.api_client - INFO - Fetching positions for session=9854
+2025-12-17 23:26:33,056 - src.data.api_client - INFO - Fetching weather for session=9854
+2025-12-17 23:26:33,057 - src.data.api_client - INFO - Fetching pit stops for session=9854
+2025-12-17 23:26:33,057 - src.data.api_client - INFO - Fetching intervals for session=9854
+2025-12-17 23:26:33,058 - src.data.api_client - INFO - Fetching drivers for session=9854
+2025-12-17 23:26:33,277 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9858)
+2025-12-17 23:26:33,278 - src.data.api_client - INFO - Fetching laps for session=9858, driver=None
+2025-12-17 23:26:33,278 - src.data.api_client - INFO - Fetching positions for session=9858
+2025-12-17 23:26:33,278 - src.data.api_client - INFO - Fetching weather for session=9858
+2025-12-17 23:26:33,278 - src.data.api_client - INFO - Fetching pit stops for session=9858
+2025-12-17 23:26:33,280 - src.data.api_client - INFO - Fetching intervals for session=9858
+2025-12-17 23:26:33,281 - src.data.api_client - INFO - Fetching drivers for session=9858
+2025-12-17 23:26:33,413 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9854
+2025-12-17 23:26:33,565 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9840)
+2025-12-17 23:26:33,566 - src.data.api_client - INFO - Fetching laps for session=9840, driver=None
+2025-12-17 23:26:33,566 - src.data.api_client - INFO - Fetching positions for session=9840
+2025-12-17 23:26:33,567 - src.data.api_client - INFO - Fetching weather for session=9840
+2025-12-17 23:26:33,567 - src.data.api_client - INFO - Fetching pit stops for session=9840
+2025-12-17 23:26:33,567 - src.data.api_client - INFO - Fetching intervals for session=9840
+2025-12-17 23:26:33,567 - src.data.api_client - INFO - Fetching drivers for session=9840
+2025-12-17 23:26:33,835 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9858
+2025-12-17 23:26:33,921 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9840
+2025-12-17 23:26:33,922 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9840
+2025-12-17 23:26:34,028 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:34,088 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:34,105 - src.data.data_collector - INFO - Collecting data for Sprint Qualifying (session_key: 9841)
+2025-12-17 23:26:34,106 - src.data.api_client - INFO - Fetching laps for session=9841, driver=None
+2025-12-17 23:26:34,106 - src.data.api_client - INFO - Fetching positions for session=9841
+2025-12-17 23:26:34,107 - src.data.api_client - INFO - Fetching weather for session=9841
+2025-12-17 23:26:34,107 - src.data.api_client - INFO - Fetching pit stops for session=9841
+2025-12-17 23:26:34,107 - src.data.api_client - INFO - Fetching intervals for session=9841
+2025-12-17 23:26:34,108 - src.data.api_client - INFO - Fetching drivers for session=9841
+2025-12-17 23:26:34,447 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9841
+2025-12-17 23:26:34,972 - src.data.data_collector - INFO - Collecting data for Sprint (session_key: 9845)
+2025-12-17 23:26:34,973 - src.data.api_client - INFO - Fetching laps for session=9845, driver=None
+2025-12-17 23:26:34,977 - src.data.api_client - INFO - Fetching positions for session=9845
+2025-12-17 23:26:34,980 - src.data.api_client - INFO - Fetching weather for session=9845
+2025-12-17 23:26:34,981 - src.data.api_client - INFO - Fetching pit stops for session=9845
+2025-12-17 23:26:34,981 - src.data.api_client - INFO - Fetching intervals for session=9845
+2025-12-17 23:26:34,982 - src.data.api_client - INFO - Fetching drivers for session=9845
+2025-12-17 23:26:35,336 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9845
+2025-12-17 23:26:36,137 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9846)
+2025-12-17 23:26:36,137 - src.data.api_client - INFO - Fetching laps for session=9846, driver=None
+2025-12-17 23:26:36,137 - src.data.api_client - INFO - Fetching positions for session=9846
+2025-12-17 23:26:36,137 - src.data.api_client - INFO - Fetching weather for session=9846
+2025-12-17 23:26:36,137 - src.data.api_client - INFO - Fetching pit stops for session=9846
+2025-12-17 23:26:36,137 - src.data.api_client - INFO - Fetching intervals for session=9846
+2025-12-17 23:26:36,138 - src.data.api_client - INFO - Fetching drivers for session=9846
+2025-12-17 23:26:36,486 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9846
+2025-12-17 23:26:36,498 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9846
+2025-12-17 23:26:36,568 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9850)
+2025-12-17 23:26:36,568 - src.data.api_client - INFO - Fetching laps for session=9850, driver=None
+2025-12-17 23:26:36,568 - src.data.api_client - INFO - Fetching positions for session=9850
+2025-12-17 23:26:36,717 - src.data.api_client - INFO - Fetching weather for session=9850
+2025-12-17 23:26:36,718 - src.data.api_client - INFO - Fetching pit stops for session=9850
+2025-12-17 23:26:36,725 - src.data.api_client - INFO - Fetching intervals for session=9850
+2025-12-17 23:26:36,725 - src.data.api_client - INFO - Fetching drivers for session=9850
+2025-12-17 23:26:36,735 - src.data.data_collector - INFO - Collecting data for Practice 1 (session_key: 9832)
+2025-12-17 23:26:36,736 - src.data.api_client - INFO - Fetching laps for session=9832, driver=None
+2025-12-17 23:26:36,736 - src.data.api_client - INFO - Fetching positions for session=9832
+2025-12-17 23:26:36,736 - src.data.api_client - INFO - Fetching weather for session=9832
+2025-12-17 23:26:36,736 - src.data.api_client - INFO - Fetching pit stops for session=9832
+2025-12-17 23:26:36,736 - src.data.api_client - INFO - Fetching intervals for session=9832
+2025-12-17 23:26:36,737 - src.data.api_client - INFO - Fetching drivers for session=9832
+2025-12-17 23:26:37,072 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9850
+2025-12-17 23:26:37,076 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9832
+2025-12-17 23:26:37,088 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9832
+2025-12-17 23:26:37,120 - src.data.data_collector - INFO - Collecting data for Practice 2 (session_key: 9833)
+2025-12-17 23:26:37,121 - src.data.api_client - INFO - Fetching laps for session=9833, driver=None
+2025-12-17 23:26:37,121 - src.data.api_client - INFO - Fetching positions for session=9833
+2025-12-17 23:26:37,121 - src.data.api_client - INFO - Fetching weather for session=9833
+2025-12-17 23:26:37,122 - src.data.api_client - INFO - Fetching pit stops for session=9833
+2025-12-17 23:26:37,122 - src.data.api_client - INFO - Fetching intervals for session=9833
+2025-12-17 23:26:37,123 - src.data.api_client - INFO - Fetching drivers for session=9833
+2025-12-17 23:26:37,249 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9832
+2025-12-17 23:26:37,250 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9832
+2025-12-17 23:26:37,461 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9833
+2025-12-17 23:26:37,468 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9833
+2025-12-17 23:26:37,475 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9833
+2025-12-17 23:26:37,475 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:37,475 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9833
+2025-12-17 23:26:37,487 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:37,490 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:37,855 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9846
+2025-12-17 23:26:37,866 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:38,604 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9832
+2025-12-17 23:26:38,819 - src.data.api_client - WARNING - Request failed (attempt 2/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9833
+2025-12-17 23:26:40,481 - src.data.data_collector - INFO - Collecting data for Practice 3 (session_key: 9834)
+2025-12-17 23:26:40,481 - src.data.api_client - INFO - Fetching laps for session=9834, driver=None
+2025-12-17 23:26:40,482 - src.data.api_client - INFO - Fetching positions for session=9834
+2025-12-17 23:26:40,482 - src.data.api_client - INFO - Fetching weather for session=9834
+2025-12-17 23:26:40,482 - src.data.api_client - INFO - Fetching pit stops for session=9834
+2025-12-17 23:26:40,483 - src.data.api_client - INFO - Fetching intervals for session=9834
+2025-12-17 23:26:40,484 - src.data.api_client - INFO - Fetching drivers for session=9834
+2025-12-17 23:26:40,929 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9834
+2025-12-17 23:26:40,930 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/drivers?session_key=9834
+2025-12-17 23:26:40,997 - src.data.api_client - WARNING - Request failed (attempt 3/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9832
+2025-12-17 23:26:40,997 - src.data.data_collector - WARNING -   ✗ laps failed for session 9832: 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9832
+2025-12-17 23:26:40,998 - src.data.data_collector - INFO - Collecting data for Qualifying (session_key: 9835)
+2025-12-17 23:26:40,998 - src.data.api_client - INFO - Fetching laps for session=9835, driver=None
+2025-12-17 23:26:40,999 - src.data.api_client - INFO - Fetching positions for session=9835
+2025-12-17 23:26:41,000 - src.data.api_client - INFO - Fetching weather for session=9835
+2025-12-17 23:26:41,001 - src.data.api_client - INFO - Fetching pit stops for session=9835
+2025-12-17 23:26:41,002 - src.data.api_client - INFO - Fetching intervals for session=9835
+2025-12-17 23:26:41,003 - src.data.api_client - INFO - Fetching drivers for session=9835
+2025-12-17 23:26:41,346 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9835
+2025-12-17 23:26:41,356 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9835
+2025-12-17 23:26:41,360 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/pit?session_key=9835
+2025-12-17 23:26:41,758 - src.data.data_collector - INFO - Collecting data for Race (session_key: 9839)
+2025-12-17 23:26:41,759 - src.data.api_client - INFO - Fetching laps for session=9839, driver=None
+2025-12-17 23:26:41,759 - src.data.api_client - INFO - Fetching positions for session=9839
+2025-12-17 23:26:41,760 - src.data.api_client - INFO - Fetching weather for session=9839
+2025-12-17 23:26:41,761 - src.data.api_client - INFO - Fetching pit stops for session=9839
+2025-12-17 23:26:41,761 - src.data.api_client - INFO - Fetching intervals for session=9839
+2025-12-17 23:26:41,762 - src.data.api_client - INFO - Fetching drivers for session=9839
+2025-12-17 23:26:42,120 - src.data.api_client - WARNING - Request failed (attempt 1/3): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9839
+2025-12-17 23:26:45,348 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.openf1.org. Connection pool size: 10
+2025-12-17 23:26:46,234 - src.data.data_collector - INFO - Saved 123 records to data/raw/2025/sessions.csv
+2025-12-17 23:26:46,641 - src.data.data_collector - INFO - Saved 67684 records to data/raw/2025/laps.csv
+2025-12-17 23:26:46,726 - src.data.data_collector - INFO - Saved 91501 records to data/raw/2025/positions.csv
+2025-12-17 23:26:46,760 - src.data.data_collector - INFO - Saved 12981 records to data/raw/2025/weather.csv
+2025-12-17 23:26:46,773 - src.data.data_collector - INFO - Saved 9490 records to data/raw/2025/pit_stops.csv
+2025-12-17 23:26:47,563 - src.data.data_collector - INFO - Saved 599413 records to data/raw/2025/intervals.csv
+2025-12-17 23:26:47,572 - src.data.data_collector - INFO - Saved 2415 records to data/raw/2025/drivers.csv
+2025-12-17 23:26:47,678 - __main__ - INFO - === Data Collection Complete ===
+
+2025-12-17 23:26:47,678 - __main__ - INFO - Done!
+2025-12-17 23:31:22,910 - __main__ - INFO - Starting F1 Predictor in 'train' mode
+2025-12-17 23:31:22,910 - __main__ - INFO - === Starting Model Training ===
+2025-12-17 23:31:22,912 - __main__ - INFO - Loaded 439 feature records
+2025-12-17 23:31:22,912 - src.models.trainer - INFO - Preparing data: 439 samples
+2025-12-17 23:31:22,917 - src.models.trainer - INFO - Features: 31, Samples: 439
+2025-12-17 23:31:22,918 - src.models.trainer - INFO - Train size: 351, Test size: 88
+2025-12-17 23:31:22,921 - src.models.trainer - INFO - Features scaled using standard scaler
+2025-12-17 23:31:22,921 - src.models.trainer - INFO - Training XGBoost model
+2025-12-17 23:31:23,651 - src.models.trainer - INFO - TRAIN Metrics - MAE: 0.036, RMSE: 0.087, R²: 1.000, Top-3 Acc: 0.333, Winner Acc: 0.000
+2025-12-17 23:31:23,655 - src.models.trainer - INFO - TEST Metrics - MAE: 3.851, RMSE: 4.681, R²: 0.338, Top-3 Acc: 0.000, Winner Acc: 0.000
+2025-12-17 23:31:23,656 - __main__ - INFO - 
+--- Training Results (xgboost) ---
+2025-12-17 23:31:23,656 - __main__ - INFO - Train samples: 351
+2025-12-17 23:31:23,656 - __main__ - INFO - Test samples: 88
+2025-12-17 23:31:23,656 - __main__ - INFO - 
+Train Metrics:
+2025-12-17 23:31:23,656 - __main__ - INFO -   mae: 0.0358
+2025-12-17 23:31:23,656 - __main__ - INFO -   rmse: 0.0870
+2025-12-17 23:31:23,656 - __main__ - INFO -   r2_score: 0.9998
+2025-12-17 23:31:23,656 - __main__ - INFO -   top3_accuracy: 0.3333
+2025-12-17 23:31:23,656 - __main__ - INFO -   winner_accuracy: 0.0000
+2025-12-17 23:31:23,656 - __main__ - INFO -   podium_precision: 0.3333
+2025-12-17 23:31:23,656 - __main__ - INFO - 
+Test Metrics:
+2025-12-17 23:31:23,656 - __main__ - INFO -   mae: 3.8513
+2025-12-17 23:31:23,656 - __main__ - INFO -   rmse: 4.6808
+2025-12-17 23:31:23,656 - __main__ - INFO -   r2_score: 0.3378
+2025-12-17 23:31:23,656 - __main__ - INFO -   top3_accuracy: 0.0000
+2025-12-17 23:31:23,656 - __main__ - INFO -   winner_accuracy: 0.0000
+2025-12-17 23:31:23,656 - __main__ - INFO -   podium_precision: 0.0000
+2025-12-17 23:31:23,656 - __main__ - INFO - 
+Top 10 Most Important Features:
+2025-12-17 23:31:23,657 - __main__ - INFO -   podium_rate: 0.1939
+2025-12-17 23:31:23,657 - __main__ - INFO -   avg_finish_position: 0.1229
+2025-12-17 23:31:23,657 - __main__ - INFO -   num_pit_stops: 0.0880
+2025-12-17 23:31:23,657 - __main__ - INFO -   total_laps: 0.0835
+2025-12-17 23:31:23,657 - __main__ - INFO -   avg_finish_last_10: 0.0482
+2025-12-17 23:31:23,657 - __main__ - INFO -   consistency_score: 0.0383
+2025-12-17 23:31:23,657 - __main__ - INFO -   best_finish_position: 0.0333
+2025-12-17 23:31:23,657 - __main__ - INFO -   races_completed: 0.0305
+2025-12-17 23:31:23,657 - __main__ - INFO -   total_pit_time: 0.0293
+2025-12-17 23:31:23,657 - __main__ - INFO -   avg_humidity: 0.0269
+2025-12-17 23:31:23,661 - src.models.trainer - INFO - Model saved to data/models/xgboost_model.pkl
+2025-12-17 23:31:23,661 - __main__ - INFO - 
+Model saved to data/models/xgboost_model.pkl
+2025-12-17 23:31:23,661 - __main__ - INFO - === Model Training Complete ===
+
+2025-12-17 23:31:23,661 - __main__ - INFO - Done!

@@ -107,3 +107,18 @@ meeting_key,session_key,location,date_start,date_end,session_type,session_name,c
 1273,9864,São Paulo,2025-11-08T14:00:00+00:00,2025-11-08T15:00:00+00:00,Race,Sprint,10,BRA,Brazil,14,Interlagos,-03:00:00,2025
 1273,9865,São Paulo,2025-11-08T18:00:00+00:00,2025-11-08T19:00:00+00:00,Qualifying,Qualifying,10,BRA,Brazil,14,Interlagos,-03:00:00,2025
 1273,9869,São Paulo,2025-11-09T17:00:00+00:00,2025-11-09T19:00:00+00:00,Race,Race,10,BRA,Brazil,14,Interlagos,-03:00:00,2025
+1274,9851,Las Vegas,2025-11-21T00:30:00+00:00,2025-11-21T01:30:00+00:00,Practice,Practice 1,19,USA,United States,152,Las Vegas,-08:00:00,2025
+1274,9852,Las Vegas,2025-11-21T04:00:00+00:00,2025-11-21T05:00:00+00:00,Practice,Practice 2,19,USA,United States,152,Las Vegas,-08:00:00,2025
+1274,9853,Las Vegas,2025-11-22T00:30:00+00:00,2025-11-22T01:30:00+00:00,Practice,Practice 3,19,USA,United States,152,Las Vegas,-08:00:00,2025
+1274,9854,Las Vegas,2025-11-22T04:00:00+00:00,2025-11-22T05:00:00+00:00,Qualifying,Qualifying,19,USA,United States,152,Las Vegas,-08:00:00,2025
+1274,9858,Las Vegas,2025-11-23T04:00:00+00:00,2025-11-23T06:00:00+00:00,Race,Race,19,USA,United States,152,Las Vegas,-08:00:00,2025
+1275,9840,Lusail,2025-11-28T13:30:00+00:00,2025-11-28T14:30:00+00:00,Practice,Practice 1,149,QAT,Qatar,150,Lusail,03:00:00,2025
+1275,9841,Lusail,2025-11-28T17:30:00+00:00,2025-11-28T18:14:00+00:00,Qualifying,Sprint Qualifying,149,QAT,Qatar,150,Lusail,03:00:00,2025
+1275,9845,Lusail,2025-11-29T14:00:00+00:00,2025-11-29T15:00:00+00:00,Race,Sprint,149,QAT,Qatar,150,Lusail,03:00:00,2025
+1275,9846,Lusail,2025-11-29T18:00:00+00:00,2025-11-29T19:00:00+00:00,Qualifying,Qualifying,149,QAT,Qatar,150,Lusail,03:00:00,2025
+1275,9850,Lusail,2025-11-30T16:00:00+00:00,2025-11-30T18:00:00+00:00,Race,Race,149,QAT,Qatar,150,Lusail,03:00:00,2025
+1276,9832,Yas Island,2025-12-05T09:30:00+00:00,2025-12-05T10:30:00+00:00,Practice,Practice 1,21,UAE,United Arab Emirates,70,Yas Marina Circuit,04:00:00,2025
+1276,9833,Yas Island,2025-12-05T13:00:00+00:00,2025-12-05T14:00:00+00:00,Practice,Practice 2,21,UAE,United Arab Emirates,70,Yas Marina Circuit,04:00:00,2025
+1276,9834,Yas Island,2025-12-06T10:30:00+00:00,2025-12-06T11:30:00+00:00,Practice,Practice 3,21,UAE,United Arab Emirates,70,Yas Marina Circuit,04:00:00,2025
+1276,9835,Yas Island,2025-12-06T14:00:00+00:00,2025-12-06T15:00:00+00:00,Qualifying,Qualifying,21,UAE,United Arab Emirates,70,Yas Marina Circuit,04:00:00,2025
+1276,9839,Yas Island,2025-12-07T13:00:00+00:00,2025-12-07T15:00:00+00:00,Race,Race,21,UAE,United Arab Emirates,70,Yas Marina Circuit,04:00:00,2025

@@ -200,8 +200,12 @@ def predict_upcoming_race(meeting_key: int, location: str = None):
         logger.info("🏆 PREDICTED RACE RESULTS")
         logger.info("="*70)
         
-        for idx, row in predictions.head(15).iterrows():
-            pos = int(row['predicted_position_int'])
+        # Reset index and add position column
+        predictions_display = predictions.head(15).reset_index(drop=True)
+        predictions_display['display_pos'] = range(1, len(predictions_display) + 1)
+        
+        for _, row in predictions_display.iterrows():
+            pos = int(row['display_pos'])
             driver_name = row.get('full_name', f"Driver #{int(row['driver_number'])}")
             if pd.isna(driver_name):
                 driver_name = f"Driver #{int(row['driver_number'])}"
