@@ -288,10 +288,15 @@ class AutomatedRacePredictor:
         logger.info(f"Building features for {len(drivers)} drivers")
         
         features_list = []
+        drivers_with_history = []
+        drivers_without_history = []
         
         for driver_number in drivers:
             # Start with historical features (driver's past performance)
             driver_hist = self._get_historical_features(driver_number)
+            
+            # Track which drivers have historical data
+            has_history = bool(driver_hist) and driver_hist.get('races_completed', 0) > 0
             
             # Add current weekend features
             weekend_features = self._build_weekend_features(
@@ -301,16 +306,44 @@ class AutomatedRacePredictor:
             # Get driver info
             driver_info = self._get_driver_info(driver_number, processed_data['drivers'])
             
+            if has_history:
+                drivers_with_history.append(driver_number)
+            else:
+                drivers_without_history.append(driver_number)
+                # For drivers without history, use conservative defaults (back of grid)
+                driver_hist = {
+                    'avg_finish_position': 15.0,
+                    'best_finish_position': 10.0,
+                    'worst_finish_position': 20.0,
+                    'finish_position_std': 3.0,
+                    'races_completed': 0,
+                    'podium_rate': 0.0,
+                    'win_rate': 0.0,
+                    'avg_finish_last_3': 15.0,
+                    'avg_finish_last_5': 15.0,
+                    'avg_finish_last_10': 15.0,
+                    'trend_last_3': 0.0,
+                    'trend_last_5': 0.0,
+                    'trend_last_10': 0.0,
+                    'team_avg_position': 15.0,
+                    'team_consistency': 3.0,
+                    'teammate_avg_position': 15.0
+                }
+            
             # Combine all features
             row = {
                 'driver_number': driver_number,
                 'session_key': race_session['session_key'] if race_session else race_info['meeting_key'],
+                'has_historical_data': has_history,
                 **driver_hist,
                 **weekend_features,
                 **driver_info
             }
             
             features_list.append(row)
+        
+        logger.info(f"  Drivers with historical data: {len(drivers_with_history)}")
+        logger.info(f"  Drivers without history (rookies/reserves): {len(drivers_without_history)}")
         
         features_df = pd.DataFrame(features_list)
         logger.info(f"Built feature matrix with shape {features_df.shape}")
@@ -351,6 +384,36 @@ class AutomatedRacePredictor:
         
         laps_df = processed_data.get('laps', pd.DataFrame())
         
+        # Collect all weekend laps for this driver (practice + qualifying)
+        driver_laps = laps_df[laps_df['driver_number'] == driver_number] if not laps_df.empty else pd.DataFrame()
+        
+        # Build lap-based features matching the model's expected format
+        # NOTE: The training data has a bug where lap times were converted using
+        # pd.to_timedelta() without unit='s', resulting in nanosecond interpretation.
+        # We need to match this scaling for predictions to work correctly.
+        # A proper fix would be to retrain the model with correct lap times.
+        TRAINING_DATA_SCALE_FACTOR = 1e-9  # Convert seconds to nanoseconds then to "days"
+        
+        if not driver_laps.empty and 'lap_time_seconds' in driver_laps.columns:
+            valid_laps = driver_laps['lap_time_seconds'].dropna()
+            if len(valid_laps) > 0:
+                # Apply the same broken scaling as training data
+                scaled_laps = valid_laps * TRAINING_DATA_SCALE_FACTOR
+                
+                features['avg_lap_time'] = scaled_laps.mean()
+                features['lap_time_std'] = scaled_laps.std() if len(valid_laps) > 1 else 0
+                features['best_lap_time'] = scaled_laps.min()
+                features['total_laps'] = len(valid_laps)
+                
+                # Consistency score (coefficient of variation)
+                if features['avg_lap_time'] > 0:
+                    features['consistency_score'] = features['lap_time_std'] / features['avg_lap_time']
+                else:
+                    features['consistency_score'] = 0
+        
+        # Apply same broken scaling for qualifying lap times
+        TRAINING_DATA_SCALE_FACTOR = 1e-9
+        
         # Qualifying features
         if quali_session and not laps_df.empty:
             quali_laps = laps_df[
@@ -359,7 +422,7 @@ class AutomatedRacePredictor:
             ]
             
             if not quali_laps.empty and 'lap_time_seconds' in quali_laps.columns:
-                features['qualifying_best_lap'] = quali_laps['lap_time_seconds'].min()
+                features['qualifying_best_lap'] = quali_laps['lap_time_seconds'].min() * TRAINING_DATA_SCALE_FACTOR
                 
                 # Calculate qualifying position
                 all_quali_laps = laps_df[laps_df['session_key'] == quali_session['session_key']]
@@ -367,22 +430,6 @@ class AutomatedRacePredictor:
                     best_laps = all_quali_laps.groupby('driver_number')['lap_time_seconds'].min().sort_values()
                     if driver_number in best_laps.index:
                         features['qualifying_position'] = list(best_laps.index).index(driver_number) + 1
-        
-        # Practice features (best lap from all practice sessions)
-        practice_laps = []
-        for practice in practice_sessions:
-            if not laps_df.empty:
-                p_laps = laps_df[
-                    (laps_df['session_key'] == practice['session_key']) &
-                    (laps_df['driver_number'] == driver_number)
-                ]
-                if not p_laps.empty and 'lap_time_seconds' in p_laps.columns:
-                    practice_laps.extend(p_laps['lap_time_seconds'].dropna().tolist())
-        
-        if practice_laps:
-            features['practice_best_lap'] = min(practice_laps)
-            features['practice_avg_lap'] = np.mean(practice_laps)
-            features['practice_lap_count'] = len(practice_laps)
         
         # Weather features from weekend
         weather_df = processed_data.get('weather', pd.DataFrame())
@@ -393,6 +440,14 @@ class AutomatedRacePredictor:
                 features['avg_track_temp'] = weather_df['track_temperature'].mean()
             if 'humidity' in weather_df.columns:
                 features['avg_humidity'] = weather_df['humidity'].mean()
+            if 'rainfall' in weather_df.columns:
+                features['rainfall'] = weather_df['rainfall'].sum()
+            features['weather_variability'] = weather_df['air_temperature'].std() if 'air_temperature' in weather_df.columns else 0
+        
+        # Pit stop features (set to 0 for predictions since race hasn't happened)
+        features['num_pit_stops'] = 0
+        features['avg_pit_duration'] = 0
+        features['total_pit_time'] = 0
         
         return features
     
@@ -432,19 +487,42 @@ class AutomatedRacePredictor:
         trainer = ModelTrainer({}, {})
         trainer.load_model(str(model_path))
         
+        logger.info(f"Model expects {len(trainer.feature_names)} features")
+        
         # Get feature columns that match training
         available_features = [f for f in trainer.feature_names if f in features_df.columns]
         missing_features = [f for f in trainer.feature_names if f not in features_df.columns]
         
+        logger.info(f"Available features: {len(available_features)}, Missing: {len(missing_features)}")
+        
         if missing_features:
-            logger.warning(f"Missing {len(missing_features)} features - filling with median/0")
+            logger.warning(f"Missing features: {missing_features[:10]}...")
+            # Fill missing features with median from historical data or 0
             for f in missing_features:
-                features_df[f] = 0
+                if not self.historical_features.empty and f in self.historical_features.columns:
+                    features_df[f] = self.historical_features[f].median()
+                else:
+                    features_df[f] = 0
         
         # Prepare features
         X = features_df[trainer.feature_names].copy()
+        
+        # Debug: Show key features for a few drivers
+        logger.info("\n📊 Debug - Key features by driver:")
+        key_cols = ['podium_rate', 'avg_finish_position', 'qualifying_position']
+        for dn in [1, 4, 44, 31, 18]:  # VER, NOR, HAM, OCO, STR
+            driver_row = features_df[features_df['driver_number'] == dn]
+            if not driver_row.empty:
+                name = driver_row['full_name'].values[0][:15] if 'full_name' in driver_row else f'#{dn}'
+                vals = [f"{col}={driver_row[col].values[0]:.2f}" if col in driver_row else f"{col}=N/A" 
+                        for col in key_cols]
+                logger.info(f"  {name}: {', '.join(vals)}")
+        
         X = X.fillna(X.median())
         X = X.fillna(0)
+        
+        # Replace inf values
+        X = X.replace([np.inf, -np.inf], 0)
         
         # Scale if needed
         if trainer.scaler is not None:
@@ -456,16 +534,77 @@ class AutomatedRacePredictor:
         else:
             X_scaled = X
         
-        # Predict
+        # Predict - model predicts finish position score
+        # IMPORTANT: Lower predicted value = worse finish position (higher P#)
+        # So we sort DESCENDING - higher score = better predicted finish
         predictions = trainer.model.predict(X_scaled)
         
         # Create results
         results = features_df[['driver_number', 'full_name', 'team_name']].copy()
-        results['predicted_score'] = predictions
-        results['predicted_position'] = results['predicted_score'].rank().astype(int)
+        results['xgboost_score'] = predictions
         
-        # Sort by predicted position
-        results = results.sort_values('predicted_position')
+        # Add qualifying position for context
+        if 'qualifying_position' in features_df.columns:
+            results['qualifying_position'] = features_df['qualifying_position'].values
+        else:
+            results['qualifying_position'] = np.nan
+        
+        # Add other key features for hybrid scoring
+        for col in ['podium_rate', 'avg_finish_position', 'has_historical_data']:
+            if col in features_df.columns:
+                results[col] = features_df[col].values
+        
+        # HYBRID SCORING SYSTEM
+        # The XGBoost model doesn't use qualifying position (it was NaN in training data)
+        # but qualifying is HIGHLY predictive of race results (~70% correlation)
+        # We create a hybrid score that combines:
+        # 1. XGBoost prediction (historical performance) - already on 1-20 scale
+        # 2. Qualifying position (current weekend form) - on 1-20 scale
+        # 3. Penalty for drivers without historical data
+        
+        logger.info("\n📊 Building hybrid prediction (XGBoost + Qualifying + Historical)...")
+        
+        # XGBoost already predicts on a ~1-20 scale (final position)
+        # Lower XGB score = better predicted position
+        results['xgb_normalized'] = results['xgboost_score']
+        
+        # Fill missing qualifying positions with back of grid
+        results['quali_adj'] = results['qualifying_position'].fillna(20)
+        
+        # Historical data penalty: drivers without history get worse score
+        results['history_penalty'] = results['has_historical_data'].apply(
+            lambda x: 0 if x else 5  # +5 positions penalty for no history
+        )
+        
+        # Hybrid score formula:
+        # 40% XGBoost (historical performance)
+        # 50% Qualifying position (current weekend form - very predictive)
+        # 10% History penalty (penalize unknown drivers)
+        WEIGHT_XGBOOST = 0.40
+        WEIGHT_QUALI = 0.50
+        WEIGHT_HISTORY = 0.10
+        
+        results['predicted_score'] = (
+            WEIGHT_XGBOOST * results['xgb_normalized'] +
+            WEIGHT_QUALI * results['quali_adj'] +
+            WEIGHT_HISTORY * results['history_penalty']
+        )
+        
+        # Sort by predicted score ASCENDING (lower = better)
+        results = results.sort_values('predicted_score', ascending=True)
+        
+        # Assign positions 1 to N based on sorted order
+        results['predicted_position'] = range(1, len(results) + 1)
+        
+        # Debug: show top 5 drivers' scoring breakdown
+        logger.info("\nTop 5 predicted drivers scoring breakdown:")
+        logger.info(f"{'Driver':<20} {'XGB':<8} {'Quali':<8} {'Hybrid':<8}")
+        for _, row in results.head(5).iterrows():
+            name = row['full_name'][:18]
+            xgb = row['xgb_normalized']
+            quali = row['quali_adj']
+            hybrid = row['predicted_score']
+            logger.info(f"{name:<20} {xgb:<8.2f} {quali:<8.0f} {hybrid:<8.2f}")
         
         return results
     
